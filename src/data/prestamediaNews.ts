@@ -82,6 +82,32 @@ Paragraf ketiga muncul setelah foto di atas.
 */
 const NEWS: NewsEntry[] = [
   {
+    slug: 'dyah-liaidhil-fitri-sman-2-malang-first-runner-up-puteri-jawa-timur-2026',
+    title: 'Membawa Misi FindYourFi, Dyah Li’aidhil Fitri Raih Gelar First Runner-Up Puteri Jawa Timur 2026',
+    category: 'Prestasi & Pariwisata',
+    date: '2026-10-13',
+    author: 'Redaksi Prestamedia',
+    dateline: 'SURABAYA, PRESTAMEDIA',
+    excerpt: 'Mewakili Kota Malang, siswi SMA Negeri 2 Malang, Dyah Li’aidhil Fitri, berhasil meraih posisi First Runner-Up sekaligus menyuarakan advokasi pengembangan diri bagi generasi muda.',
+    cover: 'https://i.ibb.co.com/G3BLp6FM/Screenshot-2026-10-13-at-20-24-26.png',
+    coverCaption: 'Dyah Li’aidhil Fitri saat menerima penghargaan sebagai First Runner-Up Puteri Jawa Timur 2026.',
+    text: `
+Malam Grand Final Putera Puteri Jawa Timur 2026 yang diselenggarakan di Surabaya pada 1 hingga 3 Oktober 2026 menjadi capaian penting bagi Dyah Li’aidhil Fitri. Siswi SMA Negeri 2 Malang yang akrab disapa Fifi ini berhasil menuntaskan seluruh rangkaian seleksi dan masa karantina dengan hasil yang membanggakan.
+
+Mewakili Kota Malang, Fifi menampilkan perpaduan antara kecerdasan, wawasan, dan kepercayaan diri yang meyakinkan dewan juri. Penilaian tersebut mengantarkannya meraih gelar First Runner-Up Puteri Jawa Timur 2026 dalam ajang yang diselenggarakan oleh Ryo Management.
+
+Bagi Fifi, kompetisi ini bukan sekadar ajang penampilan, melainkan sebuah platform strategis untuk mengembangkan potensi. Ia memanfaatkan kesempatan tersebut untuk terus mengasah kemampuan komunikasi, mematangkan jiwa kepemimpinan, serta mengharumkan nama Kota Malang di tingkat provinsi.
+
+[foto: https://i.ibb.co.com/zh3RSLtP/IMG-5454-dyaa-fifi.jpg | Penampilan anggun Dyah Li’aidhil Fitri dengan mengenakan atribut First Runner-Up Puteri Jawa Timur 2026.]
+
+Selain berkompetisi, fokus utama Fifi terletak pada inisiatif advokasi yang ia gagas, yaitu FindYourFi. Program ini lahir dari kepeduliannya terhadap generasi muda, dengan tujuan utama mendorong pengenalan potensi diri, membangun kepercayaan diri, serta memberdayakan anak muda agar berani mengeksplorasi kemampuan mereka.
+
+Melalui gerakan FindYourFi, Fifi berharap dapat memotivasi generasi muda untuk lebih mengenal jati dirinya dan berani mencoba hal-hal baru. Ia ingin menanamkan pemahaman bahwa setiap individu memiliki potensi unik yang dapat terus dikembangkan secara positif.
+
+Gelar First Runner-Up Putera Puteri Jawa Timur 2026 menjadi pencapaian signifikan sekaligus langkah awal bagi Fifi untuk terus belajar dan berkarya. Ke depan, ia berkomitmen untuk memanfaatkan jangkauan platform yang dimilikinya saat ini guna memperluas gerakan FindYourFi dan memberikan kontribusi nyata bagi masyarakat, khususnya bagi generasi muda di Kota Malang dan Jawa Timur.
+`,
+  },
+  {
     slug: 'dari-depok-ke-bali-bawa-misi-fls-mahasiswa-ubim-siap-wujudkan-pemuda-melek-teknologi',
     title: 'Dari Depok ke Bali: Bawa Misi FLS 2026, Mahasiswa UBIM Bersiap Bangun Ekosistem Pemuda Melek Teknologi',
     category: 'Pendidikan & Kepemudaan',
