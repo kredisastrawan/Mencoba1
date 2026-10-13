@@ -82,6 +82,34 @@ Paragraf ketiga muncul setelah foto di atas.
 */
 const NEWS: NewsEntry[] = [
   {
+    slug: 'dari-depok-ke-bali-bawa-misi-fls-mahasiswa-ubim-siap-wujudkan-pemuda-melek-teknologi',
+    title: 'Dari Depok ke Bali: Bawa Misi FLS 2026, Mahasiswa UBIM Bersiap Bangun Ekosistem Pemuda Melek Teknologi',
+    category: 'Pendidikan & Kepemudaan',
+    date: '2026-10-13',
+    author: 'Redaksi Prestamedia',
+    dateline: 'DENPASAR, PRESTAMEDIA',
+    excerpt: 'Pulang membawa lebih dari sekadar sertifikat, Fachril Afnizar siap mengubah cetak biru kebijakan Future Leaders Summit (FLS) 2026 menjadi aksi kolaboratif di Universitas Bali Internasional Muhammadiyah.',
+    cover: 'https://i.ibb.co.com/S717NmKq/image.png',
+    coverCaption: 'Fachril Afnizar saat mewakili Provinsi Bali dalam ajang bergengsi Future Leaders Summit 2026.',
+    text: `
+Pulang membawa lebih dari sekadar status delegasi, itulah tekad yang dipegang teguh oleh Fachril Afnizar sekembalinya ke Pulau Dewata. Mahasiswa Program Studi Bisnis Digital, Universitas Bali Internasional Muhammadiyah (UBIM) ini baru saja menuntaskan tugasnya mewakili Bali dalam ajang bergengsi *Future Leaders Summit* (FLS) 2026. 
+
+Acara besutan Kementerian Pendidikan Tinggi, Sains, dan Teknologi (Kemendiktisaintek) RI yang digelar di BBPPMVP Bisnis dan Pariwisata, Depok, pada 7–9 Oktober 2026 itu menjadi kawah candradimuka bagi ratusan pemuda terpilih dari 38 provinsi di Indonesia. Di sana, mereka tak sekadar duduk mendengarkan, melainkan ditantang untuk merumuskan arah baru kepemimpinan pemuda Nusantara.
+
+Selama tiga hari, Fachril digembleng melalui simulasi kebijakan yang intens dan dialog konstruktif kelas berat. Berhadapan langsung dengan pemangku kebijakan negeri—mulai dari Menteri Diktisaintek Prof. Brian Yuliarto, Ph.D., Wamenkeu Dr. Nurkholisoh Ibnu Aman, hingga Wamen Diktisaintek Prof. Fauzan—fokus perdebatan bermuara pada satu urgensi: bagaimana mahasiswa hari ini harus bermanuver di tengah gempuran kecerdasan buatan (AI), teknologi terapan, dan disrupsi ekonomi global.
+
+[foto: https://i.ibb.co.com/N6HsLfCM/image.png | Suasana adu gagasan dan simulasi kebijakan dalam agenda Future Leaders Summit (FLS) 2026 di Kota Depok.]
+
+Namun, gemuruh ide di meja perundingan Jawa Barat itu tak akan berarti apa-apa jika tak membumi. Fachril menyadari betul bahwa era retorika pemuda sudah usai. 
+
+"Forum FLS ini menampar kita dengan satu kenyataan penting: kepemimpinan masa depan itu diuji dari keberanian menghadirkan solusi konkret. Pulang dari Jakarta, amanah saya bukan memamerkan sertifikat, melainkan mendiseminasikan perspektif baru ini ke Bali," tegas Fachril. 
+
+Visi besarnya kini beralih ke kampus. Ia berambisi merancang sebuah ekosistem mahasiswa yang tidak hanya peka melihat ketimpangan sosial, tetapi juga luwes menggunakan alat-alat teknologi untuk menciptakan dampak nyata bagi masyarakat. 
+
+Gayung pun bersambut. Gagasan segar ini mendapat lampu hijau dan dukungan penuh dari rektorat UBIM. Tak ingin menunda waktu, Fachril kini tengah mempersiapkan serangkaian forum berbagi wawasan dan lokakarya kolaboratif di kampusnya. Langkah ini menjadi pembuktian nyata bahwa cetak biru kepemimpinan dari kementerian bukan sekadar angan-angan, melainkan siap dieksekusi menjadi aksi nyata di akar rumput.
+`,
+  },
+  {
     slug: 'kir-smpn-1-seririt-borong-juara-karya-tulis-ilmiah-sman-7-denpasar',
     title: 'KIR SMP Negeri 1 Seririt Borong Juara Lomba Karya Tulis Ilmiah di SMA Negeri 7 Denpasar',
     category: 'Pendidikan & Kepemudaan',
