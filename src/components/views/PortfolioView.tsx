@@ -23,7 +23,7 @@ export const PortfolioView: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12">
             <div className="lg:col-span-8 relative aspect-[16/10] bg-slate-900">
               <img
-                src="/BYE16agst.jpg"
+                src="https://i.ibb.co.com/bgLXT4ht/1.jpg"
                 alt="Mega Event BYE Agustus 2026 Level 21 Mall"
                 onError={(e) => {
                   const target = e.currentTarget as HTMLImageElement;

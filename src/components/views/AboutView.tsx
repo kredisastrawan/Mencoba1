@@ -61,30 +61,30 @@ export const AboutView: React.FC<AboutViewProps> = ({ onBackToHome, onJoinBye })
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             {/* Timeline Steps */}
             <div className="lg:col-span-7 space-y-8 relative before:absolute before:inset-0 before:left-3.5 before:w-0.5 before:bg-sky-200">
-              {/* 2023 */}
+              {/* Juni 2026 */}
               <div className="relative pl-10">
                 <div className="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-[#0284c7] ring-4 ring-sky-100" />
-                <span className="text-xs font-mono font-bold text-[#0284c7] block">2023</span>
+                <span className="text-xs font-mono font-bold text-[#0284c7] block">Juni 2026</span>
                 <h3 className="text-lg font-bold text-slate-900 mt-0.5">Awal Berdiri</h3>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
                   BYE lahir dari semangat sekelompok pemuda Bali yang percaya bahwa anak muda punya kekuatan untuk menciptakan perubahan.
                 </p>
               </div>
 
-              {/* 2024 */}
+              {/* Juli 2026 */}
               <div className="relative pl-10">
                 <div className="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-[#0284c7] ring-4 ring-sky-100" />
-                <span className="text-xs font-mono font-bold text-[#0284c7] block">2024</span>
+                <span className="text-xs font-mono font-bold text-[#0284c7] block">Juli 2026</span>
                 <h3 className="text-lg font-bold text-slate-900 mt-0.5">Berkembang</h3>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
                   Mulai menjalankan program, membangun jejaring, dan menjangkau lebih banyak pemuda di Bali dan Indonesia.
                 </p>
               </div>
 
-              {/* 2025 - 2026 */}
+              {/* Agustus 2026 - Saat Ini */}
               <div className="relative pl-10">
                 <div className="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-[#0284c7] ring-4 ring-sky-100" />
-                <span className="text-xs font-mono font-bold text-[#0284c7] block">2025 - 2026</span>
+                <span className="text-xs font-mono font-bold text-[#0284c7] block">Agustus 2026 - Saat Ini</span>
                 <h3 className="text-lg font-bold text-slate-900 mt-0.5">Ekspansi Dampak</h3>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
                   Memperluas ekosistem, memperluas kolaborasi, dan menghadirkan lebih banyak peluang bagi UMKM dan wirausaha muda.
@@ -96,7 +96,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onBackToHome, onJoinBye })
             <div className="lg:col-span-5 relative">
               <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3] bg-sky-900 relative">
                 <img
-                  src="/src/assets/images/hero_bali_youth_summit_1791445461875.jpg"
+                  src="https://i.ibb.co.com/YFTcm8vp/bye12.jpg"
                   alt="Perjalanan BYE"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"

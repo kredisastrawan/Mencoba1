@@ -17,7 +17,7 @@ export const ProgramsView: React.FC<ProgramsViewProps> = ({ onJoinProgram }) => 
       target: 'Pelajar, mahasiswa, pemuda umum',
       benefit: 'Sertifikat resmi, jejaring koneksi, keterampilan terapan baru',
       aktivitas: 'Workshop berkala, seminar wirausaha, bootcamp intensif',
-      image: '/src/assets/images/academy_masterclass_workshop_1791445493252.jpg',
+      image: 'https://i.ibb.co.com/0ytnWzd7/3.jpg',
     },
     {
       id: 'p2',
@@ -26,7 +26,7 @@ export const ProgramsView: React.FC<ProgramsViewProps> = ({ onJoinProgram }) => 
       target: 'Pemuda, komunitas binaan, pelaku usaha lokal',
       benefit: 'Dampak sosial terukur, pengalaman lapangan langsung, sertifikasi aksi',
       aktivitas: 'Pendampingan langsung UMKM, pelatihan kasir & AI, bedah bisnis',
-      image: '/src/assets/images/program_umkm_mentoring_1791445480011.jpg',
+      image: 'https://i.ibb.co.com/tMn7hLhZ/6.jpg',
     },
     {
       id: 'p3',
@@ -35,7 +35,7 @@ export const ProgramsView: React.FC<ProgramsViewProps> = ({ onJoinProgram }) => 
       target: 'Institusi pendidikan, perusahaan sponsor, dinas pemerintah',
       benefit: 'Akses jejaring ekosistem Bali, peluang kolaborasi CSR/bisnis',
       aktivitas: 'Forum sinergi pentahelix, penandatanganan MoU, program bersama',
-      image: '/src/assets/images/hero_bali_youth_summit_1791445461875.jpg',
+      image: 'https://i.ibb.co.com/VcjpqqTJ/7.jpg',
     },
     {
       id: 'p4',
@@ -44,7 +44,7 @@ export const ProgramsView: React.FC<ProgramsViewProps> = ({ onJoinProgram }) => 
       target: 'Inovator muda, pendiri startup, tim inisiatif kampus',
       benefit: 'Pendanaan mikro rintisan, bimbingan mentor ahli, eksposur panggung',
       aktivitas: 'Pitching day, mentoring 1-on-1, implementasi proyek lapangan',
-      image: '/src/assets/images/hero_youth_panoramic_1791447028990.jpg',
+      image: 'https://i.ibb.co.com/zhK7kMg0/8.jpg',
     },
   ];
 

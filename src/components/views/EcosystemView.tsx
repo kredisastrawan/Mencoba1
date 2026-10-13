@@ -44,7 +44,7 @@ export const EcosystemView: React.FC<EcosystemViewProps> = ({ onSelectService })
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           <div className="lg:col-span-8 rounded-3xl overflow-hidden shadow-md bg-slate-900 relative aspect-[16/10]">
             <img
-              src="/src/assets/images/hero_bali_youth_summit_1791445461875.jpg"
+              src="https://i.ibb.co.com/xKzX1ZYg/2.jpg"
               alt="Mega Event BYE"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover opacity-90"
