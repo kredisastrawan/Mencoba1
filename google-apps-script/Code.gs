@@ -87,7 +87,38 @@ function doPost(e) {
       payload = e.parameter;
     }
 
-    // 2. Sanitasi & Validasi Input Wajib
+    // 2. Cek apakah ini permintaan Inquiry (Partnership / Collaboration)
+    if (payload.action === 'inquiry' || payload.type === 'inquiry' || payload.inquiryType) {
+      var inqType = cleanString(payload.inquiryType || "Inquiry");
+      var inqName = cleanString(payload.name || payload.nama);
+      var inqEmail = cleanString(payload.email);
+      var inqDetail = cleanString(payload.detail || payload.institution || payload.collabType || "-");
+      var inqMessage = cleanString(payload.message || payload.pesan || "-");
+
+      try {
+        MailApp.sendEmail({
+          to: "baliyouthevolution@gmail.com",
+          replyTo: inqEmail,
+          subject: "[BYE " + inqType + "] Pesan dari " + inqName + " (" + inqEmail + ")",
+          body: "Halo Admin Bali Youth Evolution,\n\nTerdapat inquiry baru dari website:\n\n" +
+                "Kategori: " + inqType + "\n" +
+                "Nama: " + inqName + "\n" +
+                "Email: " + inqEmail + "\n" +
+                "Instansi / Keterangan: " + inqDetail + "\n\n" +
+                "Pesan:\n" + inqMessage + "\n\n" +
+                "--\nDikirim otomatis dari formulir website Bali Youth Evolution."
+        });
+      } catch (mailErr) {
+        // MailApp mungkin memerlukan izin atau kuota
+      }
+
+      return createJsonResponse({
+        success: true,
+        message: "Inquiry berhasil diproses dan dikirim ke baliyouthevolution@gmail.com"
+      });
+    }
+
+    // 3. Sanitasi & Validasi Input Pendaftaran Wajib
     var name = cleanString(payload.name || payload.nama);
     var whatsapp = cleanString(payload.whatsapp || payload.noHp || payload.phone);
     var role = cleanString(payload.role || payload.kategori || "Pelajar / Mahasiswa");

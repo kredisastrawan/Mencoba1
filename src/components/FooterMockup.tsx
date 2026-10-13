@@ -45,44 +45,54 @@ export const FooterMockup: React.FC<FooterMockupProps> = ({ onNavigate }) => {
             <a href="/contact" onClick={(e) => { e.preventDefault(); onNavigate('contact'); }} className="hover:text-white transition-colors cursor-pointer">Contact</a>
           </div>
 
-          {/* Social Icons */}
+          {/* Social Icons: Hanya Instagram yang bisa diklik */}
           <div className="flex items-center gap-4 text-sky-200">
             <a
               href="https://instagram.com/baliyouthevolution"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-sky-900/80 hover:bg-[#0284c7] hover:text-white flex items-center justify-center transition-colors"
-              aria-label="Instagram"
+              className="w-9 h-9 rounded-full bg-sky-900/80 hover:bg-[#0284c7] hover:text-white flex items-center justify-center transition-all shadow-xs hover:scale-105"
+              aria-label="Instagram Bali Youth Evolution"
+              title="Kunjungi Instagram @baliyouthevolution"
             >
               <Instagram className="w-4 h-4" />
             </a>
-            <a
-              href="https://tiktok.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-sky-900/80 hover:bg-[#0284c7] hover:text-white flex items-center justify-center transition-colors font-bold text-xs"
-              aria-label="TikTok"
+
+            {/* TikTok: Belum bisa diklik */}
+            <div
+              className="w-9 h-9 rounded-full bg-sky-950/80 text-sky-500/40 flex items-center justify-center font-bold text-xs cursor-not-allowed select-none opacity-50 relative group"
+              aria-label="TikTok (Belum tersedia)"
+              title="TikTok (Belum tersedia)"
             >
               TK
-            </a>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-sky-900/80 hover:bg-[#0284c7] hover:text-white flex items-center justify-center transition-colors"
-              aria-label="YouTube"
+              <span className="absolute -top-7 left-1/2 -translate-x-1/2 bg-sky-950 text-white text-[10px] py-0.5 px-1.5 rounded opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity whitespace-nowrap shadow-xs border border-sky-800">
+                Belum tersedia
+              </span>
+            </div>
+
+            {/* YouTube: Belum bisa diklik */}
+            <div
+              className="w-9 h-9 rounded-full bg-sky-950/80 text-sky-500/40 flex items-center justify-center cursor-not-allowed select-none opacity-50 relative group"
+              aria-label="YouTube (Belum tersedia)"
+              title="YouTube (Belum tersedia)"
             >
               <Youtube className="w-4 h-4" />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-sky-900/80 hover:bg-[#0284c7] hover:text-white flex items-center justify-center transition-colors"
-              aria-label="LinkedIn"
+              <span className="absolute -top-7 left-1/2 -translate-x-1/2 bg-sky-950 text-white text-[10px] py-0.5 px-1.5 rounded opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity whitespace-nowrap shadow-xs border border-sky-800">
+                Belum tersedia
+              </span>
+            </div>
+
+            {/* LinkedIn: Belum bisa diklik */}
+            <div
+              className="w-9 h-9 rounded-full bg-sky-950/80 text-sky-500/40 flex items-center justify-center cursor-not-allowed select-none opacity-50 relative group"
+              aria-label="LinkedIn (Belum tersedia)"
+              title="LinkedIn (Belum tersedia)"
             >
               <Linkedin className="w-4 h-4" />
-            </a>
+              <span className="absolute -top-7 left-1/2 -translate-x-1/2 bg-sky-950 text-white text-[10px] py-0.5 px-1.5 rounded opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity whitespace-nowrap shadow-xs border border-sky-800">
+                Belum tersedia
+              </span>
+            </div>
           </div>
         </div>
 
