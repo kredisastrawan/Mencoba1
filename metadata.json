@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Bali Youth Evolution",
+  "description": "Profil profesional Bali Youth Evolution (BYE), platform penggerak wirausaha muda, akselerasi UMKM lokal, dan ekosistem bisnis kreatif di Bali.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
