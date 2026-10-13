@@ -82,6 +82,30 @@ Paragraf ketiga muncul setelah foto di atas.
 */
 const NEWS: NewsEntry[] = [
   {
+    slug: 'kir-smpn-1-seririt-borong-juara-karya-tulis-ilmiah-sman-7-denpasar',
+    title: 'KIR SMP Negeri 1 Seririt Borong Juara Lomba Karya Tulis Ilmiah di SMA Negeri 7 Denpasar',
+    category: 'Pendidikan & Kepemudaan',
+    date: '2026-10-10',
+    author: 'Redaksi Prestamedia',
+    dateline: 'DENPASAR, PRESTAMEDIA',
+    excerpt: 'Delegasi Kelompok Ilmiah Remaja (KIR) SMP Negeri 1 Seririt tampil gemilang dengan memborong sejumlah penghargaan bergengsi dari bidang Life Science dan Social Science dalam ajang Lomba Karya Tulis Ilmiah.',
+    cover: 'https://i.ibb.co.com/4RLWGf93/IMG-20260824-WA0118.jpg',
+    coverCaption: 'Perwakilan siswa KIR SMP Negeri 1 Seririt bersama guru pembimbing memamerkan piala dan plakat Juara I Lomba Karya Tulis Ilmiah Bidang Life Science[cite: 9].',
+    text: `
+Prestasi membanggakan kembali ditorehkan oleh siswa-siswi berbakat dari Kelompok Ilmiah Remaja (KIR) SMP Negeri 1 Seririt[cite: 9]. Dalam ajang Lomba Karya Tulis Ilmiah tingkat provinsi yang diselenggarakan di SMA Negeri 7 Denpasar, delegasi sekolah ini berhasil tampil memukau dan memborong sejumlah penghargaan bergengsi[cite: 9]. 
+
+Keberhasilan ini menjadi bukti nyata konsistensi SMP Negeri 1 Seririt dalam membina potensi akademis dan pola pikir kritis para siswanya, khususnya dalam bidang penelitian ilmiah[cite: 9]. Tak tanggung-tanggung, mereka sukses mendominasi dua kategori utama perlombaan, yakni *Life Science* dan *Social Science*[cite: 9].
+
+[foto: https://i.ibb.co.com/gMNdCSKq/IMG-20260824-WA0110.jpg | Formasi lengkap delegasi KIR SMP Negeri 1 Seririt yang berhasil membawa pulang berbagai gelar juara dari kategori Life Science dan Social Science[cite: 10].]
+
+Pada kategori *Life Science*, delegasi KIR SMP Negeri 1 Seririt menunjukkan dominasi mutlak dengan meraih gelar Juara I dan Juara II secara bersamaan[cite: 9]. Tidak berhenti di situ, karya dan presentasi mereka yang inovatif juga berhasil menyabet penghargaan sebagai Pameran Terbaik ( *Best Stand*) di bidang *Life Science*[cite: 9].
+
+Selain unggul dalam ilmu alam, ketajaman analisis para siswa juga terbukti di bidang ilmu sosial[cite: 9]. Pada kategori *Social Science*, tim KIR SMP Negeri 1 Seririt berhasil menorehkan prestasi gemilang dengan meraih posisi Juara II Lomba Karya Tulis Ilmiah[cite: 9].
+
+Pencapaian luar biasa yang memadukan keunggulan di bidang eksakta maupun sosial ini tentu tidak lepas dari kerja keras para siswa, dukungan penuh dari pihak sekolah, serta bimbingan intensif dari para guru pendamping[cite: 9, 10]. Prestasi ini diharapkan dapat menjadi inspirasi bagi pelajar lainnya untuk terus berkarya, berinovasi, dan tidak ragu menuangkan gagasan-gagasan kritis mereka melalui tulisan ilmiah.
+`,
+  },
+  {
     slug: 'mulyana-sman-2-tumijajar-tembus-parlemen-remaja-2026-dpr-ri',
     title: 'Mulyana, Siswa SMAN 2 Tumijajar Tembus Parlemen Remaja 2026 dan Siap Bawa Suara Lampung ke Tingkat Nasional',
     category: 'Pendidikan & Kepemudaan',
@@ -166,7 +190,7 @@ Perjalanan M Rafiel Zarin Arifin adalah potret ideal seorang changemaker masa ki
     slug: 'asbar-buhari-pemuda-pinggiran-halmahera-ukir-prestasi',
     title: 'Asbar Buhari: Pemuda Pinggiran Halmahera yang Mengukir Prestasi Lewat Karya Tulis dan Gelar Duta',
     category: 'Tokoh & Inspirasi',
-    date: '2026-10-12',
+    date: '2026-10-11',
     author: 'Redaksi Prestamedia',
     dateline: 'HALMAHERA SELATAN, PRESTAMEDIA',
     excerpt: 'Berasal dari pinggiran kota di Halmahera Selatan, Asbar Buhari membuktikan bahwa keterbatasan bukanlah halangan. Berbekal doa orang tua, ia sukses meraih berbagai gelar duta hingga menerbitkan buku.',
@@ -190,7 +214,7 @@ Bagi Asbar, rentetan prestasi yang ia raih saat ini adalah sebuah proses panjang
     slug: 'keysa-dari-cosplay-dan-puncak-gunung-menuju-puteri-bali-persahabatan-2025',
     title: 'Cerita Keysa: Dari Hobi Cosplay dan Menaklukkan Puncak Gunung Menuju Gelar Puteri Bali Persahabatan 2025',
     category: 'Tokoh & Inspirasi',
-    date: '2026-10-12',
+    date: '2026-10-11',
     author: 'Redaksi Prestamedia',
     dateline: 'DENPASAR, PRESTAMEDIA',
     excerpt: 'Berawal dari mendaftar diam-diam, Putu Ayu Suarni (Keysa) berhasil membuktikan keberaniannya dengan meraih gelar Puteri Bali Persahabatan 2025. Ia menggabungkan pesona dunia modeling dengan ketangguhan seorang pendaki.',
@@ -319,7 +343,7 @@ Prestamedia mengucapkan selamat kepada Andi Aluna Mikaila atas deretan prestasin
     slug: 'ilham-dharma-putra-duta-pariwisata-kalbar-2026',
     title: 'Ilham Dharma Putra Siap Bawa Kalimantan Barat ke Ajang Duta Pariwisata Indonesia 2026 di Bali',
     category: 'Prestasi & Pariwisata',
-    date: '2026-10-12',
+    date: '2026-10-09',
     author: 'Redaksi Prestamedia',
     dateline: 'DENPASAR, PRESTAMEDIA',
     excerpt: 'Terpilih sebagai Duta Pariwisata Kalimantan Barat 2026 pada Juli lalu, Ilham Dharma Putra kini bersiap menuju ajang Duta Pariwisata Indonesia 2026 di Bali, 4–7 November.',
