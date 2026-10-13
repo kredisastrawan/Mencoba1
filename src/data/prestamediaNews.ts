@@ -82,11 +82,63 @@ Paragraf ketiga muncul setelah foto di atas.
 */
 const NEWS: NewsEntry[] = [
   {
+    slug: 'mulyana-sman-2-tumijajar-tembus-parlemen-remaja-2026-dpr-ri',
+    title: 'Mulyana, Siswa SMAN 2 Tumijajar Tembus Parlemen Remaja 2026 dan Siap Bawa Suara Lampung ke Tingkat Nasional',
+    category: 'Pendidikan & Kepemudaan',
+    date: '2026-10-13',
+    author: 'Redaksi Prestamedia',
+    dateline: 'TUMIJAJAR, PRESTAMEDIA',
+    excerpt: 'Berhasil menyisihkan belasan ribu pendaftar, Mulyana dari SMAN 2 Tumijajar resmi terpilih sebagai delegasi Provinsi Lampung dalam ajang Parlemen Remaja 2026 yang diselenggarakan oleh DPR RI.',
+    cover: 'https://i.ibb.co.com/8n7K2H24/Screenshot-2026-10-13-at-14-23-50.png',
+    coverCaption: 'Mulyana mengenakan selempang Parlemen Remaja DPR RI 2026 mewakili Dapil Lampung II di dalam ruang rapat Senayan[cite: 8].',
+    text: `
+Prestasi membanggakan kembali ditorehkan oleh pelajar asal Provinsi Lampung. Mulyana, siswa SMA Negeri 2 Tumijajar, sukses mencatatkan namanya sebagai delegasi resmi Provinsi Lampung dalam ajang bergengsi Parlemen Remaja 2026 yang diselenggarakan langsung oleh Dewan Perwakilan Rakyat Republik Indonesia (DPR RI).
+
+Keberhasilan Mulyana menembus Senayan bukanlah hal yang mudah. Persaingan tahun ini terbilang sangat ketat dan sengit. Dari hampir 14.000 pelajar yang mendaftar dari seluruh penjuru Indonesia, hanya 200 putra-putri terbaik yang dinyatakan lolos kualifikasi. Mulyana berhasil membuktikan kapasitasnya dan mengamankan satu posisi berharga tersebut.
+
+[foto: https://i.ibb.co.com/ZR4JWYdZ/Screenshot-2026-10-13-at-14-24-00.png | Mulyana bersama 200 delegasi Parlemen Remaja 2026 terpilih dari seluruh Indonesia berfoto di anak tangga Gedung Kura-Kura DPR/MPR RI[cite: 7].]
+
+Parlemen Remaja sendiri merupakan agenda tahunan bergengsi dari Sekretariat Jenderal DPR RI. Program ini dirancang khusus sebagai wadah pembelajaran politik dan demokrasi yang komprehensif bagi generasi muda. Melalui kegiatan ini, para peserta diajak untuk terjun langsung memahami proses pembuatan undang-undang, menjalankan fungsi pengawasan, hingga merasakan atmosfer simulasi rapat kerja layaknya seorang Anggota DPR RI sungguhan.
+
+Pencapaian Mulyana menjadi bukti nyata bahwa keterbatasan daerah sama sekali bukan penghalang untuk bersaing dan bersinar di panggung nasional. Keberaniannya dalam menyuarakan gagasan-gagasan kritis, dipadukan dengan kepedulian yang tinggi terhadap berbagai isu sosial, menjadi kunci utama yang membuatnya mampu menyisihkan belasan ribu pesaing lainnya.
+
+Selamat untuk Mulyana dan SMAN 2 Tumijajar! Semoga pengalaman berharga di Parlemen Remaja 2026 ini menjadi pijakan awal yang kokoh untuk terus berkontribusi dalam menyuarakan aspirasi masyarakat, serta membawa kemajuan bagi bangsa, negara, dan daerah asalnya.
+`,
+  },
+  {
+    slug: 'tofan-ayul-putra-desa-busua-menuju-nasional-ekowisata-indonesia-2026',
+    title: 'Tofan Ayul: Dari Desa Busua Menuju Panggung Nasional Putra Putri Ekowisata Indonesia 2026',
+    category: 'Prestasi & Pariwisata',
+    date: '2026-10-13',
+    author: 'Redaksi Prestamedia',
+    dateline: 'HALMAHERA SELATAN, PRESTAMEDIA',
+    excerpt: 'Siswa SMA Negeri 1 Halmahera Selatan, Tofan Ayul, membuktikan bahwa pemuda dari desa mampu berprestasi di tingkat nasional dengan mewakili Maluku Utara di ajang Putra Putri Ekowisata Indonesia 2026.',
+    cover: 'https://i.ibb.co.com/gZY8HyJ9/Screenshot-2026-10-13-at-14-19-25.png',
+    coverCaption: 'Tofan Ayul, Putra Ekowisata Indonesia 2026 perwakilan Provinsi Maluku Utara.',
+    text: `
+Lahir dan tumbuh besar di Desa Busua, sebuah desa yang menyimpan banyak cerita dan harapan, tidak membuat Tofan Ayul membatasi mimpinya. Siswa yang kini menempuh pendidikan di SMA Negeri 1 Halmahera Selatan ini sukses membuktikan bahwa pemuda dari daerah pun mampu bersinar dan mengukir prestasi di tingkat nasional.
+
+Sebagai anak kebanggaan dari pasangan Bapak Ayul Sehe dan Ibu Ani Arahman, Tofan dikenal sebagai sosok yang tekun dan memiliki semangat tinggi untuk terus belajar. Selama masa pendidikannya di bangku SMA, ia berhasil membuktikan dirinya sebagai siswa yang aktif, adaptif, dan sarat akan prestasi. 
+
+[foto: https://i.ibb.co.com/b508BFXC/Screenshot-2026-10-13-at-14-19-34.png | Penampilan Tofan Ayul saat persiapan menuju ajang nasional di Bali.]
+
+Puncak dari dedikasi serta kerja kerasnya terbayar lunas ketika ia secara resmi dinobatkan sebagai Putra Ekowisata Indonesia 2026 perwakilan Provinsi Maluku Utara. Pencapaian ini menjadi pembuktian bahwa potensi pemuda Halmahera Selatan mampu bersaing di kancah yang lebih luas. 
+
+"Alhamdulillah, selama menempuh pendidikan di SMA saya bisa tumbuh dan berkembang sebagai siswa berprestasi. Sebuah kebanggaan yang luar biasa bisa terpilih mewakili Maluku Utara," ungkap Tofan dengan penuh rasa syukur.
+
+Kini, tanggung jawab yang diemban Tofan semakin besar. Langkahnya tidak berhenti di tingkat provinsi. Ia tengah bersiap untuk melaju ke panggung nasional dalam ajang bergengsi pemilihan Putra Putri Ekowisata Indonesia 2026 yang akan diselenggarakan di Pulau Dewata, Bali. Kompetisi tingkat nasional tersebut dijadwalkan berlangsung pada tanggal 3 hingga 9 Desember 2026 mendatang.
+
+Keberhasilannya menembus panggung nasional bukan hanya menjadi pencapaian gemilang secara pribadi, melainkan juga sebuah persembahan manis yang mengharumkan nama Provinsi Maluku Utara, khususnya Kabupaten Halmahera Selatan dan desa kelahirannya, Desa Busua. 
+
+Melalui ajang Ekowisata Nasional ini, Tofan membawa misi untuk memperkenalkan potensi alam dan budaya daerahnya, sekaligus menjadi inspirasi bagi anak-anak muda lainnya di penjuru Maluku Utara bahwa dari desa mana pun mereka berasal, kesempatan untuk berprestasi selalu terbuka lebar.
+`,
+  },
+  {
     slug: 'm-rafiel-zarin-arifin-bukti-nyata-aksi-pemuda',
     title:
       'M Rafiel Zarin Arifin: Bukti Nyata Aksi Pemuda, dari Edukasi Lingkungan hingga Forum Perdamaian Internasional',
     category: 'Prestasi & Kepemudaan',
-    date: '2026-10-15',
+    date: '2026-10-11',
     author: 'Redaksi Prestamedia',
     dateline: 'JAKARTA, PRESTAMEDIA',
     excerpt:
