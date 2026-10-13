@@ -43,12 +43,12 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
     return () => window.removeEventListener('scroll', onScroll);
   }, [mobileMenuOpen]);
 
-  const navItems: { id: ActivePage; label: string }[] = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'bec', label: 'BEC' },
-    { id: 'prestamedia', label: 'Prestamedia' },
-    { id: 'contact', label: 'Contact' },
+  const navItems: { id: ActivePage; label: string; path: string }[] = [
+    { id: 'home', label: 'Home', path: '/' },
+    { id: 'about', label: 'About', path: '/about' },
+    { id: 'bec', label: 'BEC', path: '/bec' },
+    { id: 'prestamedia', label: 'Prestamedia', path: '/prestamedia' },
+    { id: 'contact', label: 'Contact', path: '/contact' },
   ];
 
   return (
@@ -59,9 +59,12 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
         {/* Brand Zone */}
-        <button
-          type="button"
-          onClick={() => onNavigate('home')}
+        <a
+          href="/"
+          onClick={(e) => {
+            e.preventDefault();
+            onNavigate('home');
+          }}
           className="flex items-center gap-3 text-left cursor-pointer group"
         >
           <img
@@ -77,17 +80,20 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
               Evolution
             </span>
           </div>
-        </button>
+        </a>
 
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex items-center gap-5 lg:gap-8 text-sm font-semibold">
           {navItems.map((item) => {
             const isActive = activePage === item.id;
             return (
-              <button
+              <a
                 key={item.id}
-                type="button"
-                onClick={() => onNavigate(item.id)}
+                href={item.path}
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate(item.id);
+                }}
                 className={`py-1 transition-colors cursor-pointer relative whitespace-nowrap ${
                   isActive
                     ? 'text-[#0369a1] font-bold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[#0284c7]'
@@ -95,7 +101,7 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
                 }`}
               >
                 {item.label}
-              </button>
+              </a>
             );
           })}
         </nav>
@@ -127,21 +133,22 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-6 space-y-2">
           {navItems.map((item) => (
-            <button
+            <a
               key={item.id}
-              type="button"
-              onClick={() => {
+              href={item.path}
+              onClick={(e) => {
+                e.preventDefault();
                 onNavigate(item.id);
                 setMobileMenuOpen(false);
               }}
-              className={`w-full text-left px-3 py-2.5 rounded-lg text-sm font-semibold transition-colors ${
+              className={`w-full block text-left px-3 py-2.5 rounded-lg text-sm font-semibold transition-colors ${
                 activePage === item.id
                   ? 'bg-sky-50 text-[#0369a1]'
                   : 'text-[#0284c7] hover:bg-sky-50 hover:text-[#0369a1]'
               }`}
             >
               {item.label}
-            </button>
+            </a>
           ))}
           <div className="pt-3 border-t border-slate-200">
             <button

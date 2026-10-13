@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowLeft, ArrowRight, Newspaper } from 'lucide-react';
-import { PRESTAMEDIA_NEWS, NewsItem, newsImg } from '../../data/prestamediaNews';
+import { PRESTAMEDIA_NEWS, NewsItem, newsImg, findNewsBySlug, getFriendlySlug } from '../../data/prestamediaNews';
 
 const formatDate = (iso: string) =>
   new Date(iso + 'T00:00:00').toLocaleDateString('id-ID', {
@@ -13,48 +13,56 @@ const NewsCard: React.FC<{
   item: NewsItem;
   isLatest?: boolean;
   onOpen: (slug: string) => void;
-}> = ({ item, isLatest, onOpen }) => (
-  <button
-    type="button"
-    onClick={() => onOpen(item.slug)}
-    className={`group text-left bg-white rounded-3xl border transition-all duration-300 cursor-pointer flex flex-col h-full overflow-hidden hover:shadow-xl hover:-translate-y-1 ${
-      isLatest
-        ? 'border-sky-300 ring-2 ring-sky-100 shadow-md'
-        : 'border-slate-200/90 hover:border-sky-300'
-    }`}
-  >
-    <div className="aspect-[16/10] overflow-hidden bg-slate-100 relative">
-      <img
-        src={newsImg(item.cover)}
-        alt={item.title}
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-      />
-      {isLatest && (
-        <span className="absolute top-3 left-3 bg-[#0284c7] text-white text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">
-          Terbaru
-        </span>
-      )}
-    </div>
-    <div className="p-5 flex flex-col justify-between flex-1 gap-4">
-      <div className="space-y-2.5">
-        <div className="text-[11px] font-bold uppercase tracking-wider text-[#0284c7]">
-          {item.category} · {formatDate(item.date)}
-        </div>
-        <h3 className="text-base font-extrabold text-slate-900 leading-snug group-hover:text-[#0284c7] transition-colors line-clamp-3">
-          {item.title}
-        </h3>
-        <p className="text-sm text-slate-600 leading-relaxed line-clamp-3">
-          {item.excerpt}
-        </p>
-      </div>
+}> = ({ item, isLatest, onOpen }) => {
+  const friendlySlug = getFriendlySlug(item);
+  const articleUrl = `/prestamedia/${friendlySlug}/`;
 
-      <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs sm:text-sm font-bold text-[#0284c7] group-hover:text-sky-700">
-        <span>Baca Selengkapnya</span>
-        <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+  return (
+    <a
+      href={articleUrl}
+      onClick={(e) => {
+        e.preventDefault();
+        onOpen(friendlySlug);
+      }}
+      className={`group text-left bg-white rounded-3xl border transition-all duration-300 cursor-pointer flex flex-col h-full overflow-hidden hover:shadow-xl hover:-translate-y-1 block ${
+        isLatest
+          ? 'border-sky-300 ring-2 ring-sky-100 shadow-md'
+          : 'border-slate-200/90 hover:border-sky-300'
+      }`}
+    >
+      <div className="aspect-[16/10] overflow-hidden bg-slate-100 relative">
+        <img
+          src={newsImg(item.cover)}
+          alt={item.title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        {isLatest && (
+          <span className="absolute top-3 left-3 bg-[#0284c7] text-white text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">
+            Terbaru
+          </span>
+        )}
       </div>
-    </div>
-  </button>
-);
+      <div className="p-5 flex flex-col justify-between flex-1 gap-4">
+        <div className="space-y-2.5">
+          <div className="text-[11px] font-bold uppercase tracking-wider text-[#0284c7]">
+            {item.category} · {formatDate(item.date)}
+          </div>
+          <h3 className="text-base font-extrabold text-slate-900 leading-snug group-hover:text-[#0284c7] transition-colors line-clamp-3">
+            {item.title}
+          </h3>
+          <p className="text-sm text-slate-600 leading-relaxed line-clamp-3">
+            {item.excerpt}
+          </p>
+        </div>
+
+        <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs sm:text-sm font-bold text-[#0284c7] group-hover:text-sky-700">
+          <span>Baca Selengkapnya</span>
+          <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+        </div>
+      </div>
+    </a>
+  );
+};
 
 const ArticleDetail: React.FC<{
   item: NewsItem;
@@ -66,14 +74,17 @@ const ArticleDetail: React.FC<{
   return (
     <section className="py-10 sm:py-14 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
-        <button
-          type="button"
-          onClick={onBack}
+        <a
+          href="/prestamedia"
+          onClick={(e) => {
+            e.preventDefault();
+            onBack();
+          }}
           className="inline-flex items-center gap-2 text-sm font-bold text-[#0284c7] hover:text-sky-700 mb-6 cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Kembali ke Prestamedia</span>
-        </button>
+        </a>
 
         <div className="text-xs font-bold uppercase tracking-wider text-[#0284c7] mb-3">
           {item.category}
@@ -134,18 +145,41 @@ const ArticleDetail: React.FC<{
   );
 };
 
-export const PrestamediaView: React.FC = () => {
-  const [activeSlug, setActiveSlug] = useState<string | null>(null);
+export interface PrestamediaViewProps {
+  selectedSlug?: string | null;
+  onSelectArticle?: (slug: string | null) => void;
+}
+
+export const PrestamediaView: React.FC<PrestamediaViewProps> = ({
+  selectedSlug,
+  onSelectArticle,
+}) => {
+  const [internalSlug, setInternalSlug] = useState<string | null>(null);
+
+  const currentSlug = selectedSlug !== undefined ? selectedSlug : internalSlug;
 
   const openArticle = (slug: string) => {
-    setActiveSlug(slug);
+    if (onSelectArticle) {
+      onSelectArticle(slug);
+    } else {
+      setInternalSlug(slug);
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const active = PRESTAMEDIA_NEWS.find((n) => n.slug === activeSlug);
+  const handleBack = () => {
+    if (onSelectArticle) {
+      onSelectArticle(null);
+    } else {
+      setInternalSlug(null);
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const active = currentSlug ? findNewsBySlug(currentSlug) : undefined;
   if (active) {
     return (
-      <ArticleDetail item={active} onBack={() => setActiveSlug(null)} onOpen={openArticle} />
+      <ArticleDetail item={active} onBack={handleBack} onOpen={openArticle} />
     );
   }
 

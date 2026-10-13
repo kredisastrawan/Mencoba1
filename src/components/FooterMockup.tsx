@@ -34,15 +34,15 @@ export const FooterMockup: React.FC<FooterMockupProps> = ({ onNavigate }) => {
 
           {/* Nav Links matching mockup */}
           <div className="flex flex-wrap items-center gap-6 text-xs sm:text-sm font-medium">
-            <button type="button" onClick={() => onNavigate('home')} className="hover:text-white transition-colors cursor-pointer">Home</button>
-            <button type="button" onClick={() => onNavigate('about')} className="hover:text-white transition-colors cursor-pointer">About</button>
-            <button type="button" onClick={() => onNavigate('programs')} className="hover:text-white transition-colors cursor-pointer">Programs</button>
-            <button type="button" onClick={() => onNavigate('ecosystem')} className="hover:text-white transition-colors cursor-pointer">Ecosystem</button>
-            <button type="button" onClick={() => onNavigate('portfolio')} className="hover:text-white transition-colors cursor-pointer">Portfolio</button>
-            <button type="button" onClick={() => onNavigate('partnership')} className="hover:text-white transition-colors cursor-pointer">Telah Berkolaborasi Dengan</button>
-            <button type="button" onClick={() => onNavigate('bec')} className="hover:text-white transition-colors cursor-pointer">BEC</button>
-            <button type="button" onClick={() => onNavigate('prestamedia')} className="hover:text-white transition-colors cursor-pointer">Prestamedia</button>
-            <button type="button" onClick={() => onNavigate('contact')} className="hover:text-white transition-colors cursor-pointer">Contact</button>
+            <a href="/" onClick={(e) => { e.preventDefault(); onNavigate('home'); }} className="hover:text-white transition-colors cursor-pointer">Home</a>
+            <a href="/about" onClick={(e) => { e.preventDefault(); onNavigate('about'); }} className="hover:text-white transition-colors cursor-pointer">About</a>
+            <a href="/programs" onClick={(e) => { e.preventDefault(); onNavigate('programs'); }} className="hover:text-white transition-colors cursor-pointer">Programs</a>
+            <a href="/ecosystem" onClick={(e) => { e.preventDefault(); onNavigate('ecosystem'); }} className="hover:text-white transition-colors cursor-pointer">Ecosystem</a>
+            <a href="/portfolio" onClick={(e) => { e.preventDefault(); onNavigate('portfolio'); }} className="hover:text-white transition-colors cursor-pointer">Portfolio</a>
+            <a href="/partnership" onClick={(e) => { e.preventDefault(); onNavigate('partnership'); }} className="hover:text-white transition-colors cursor-pointer">Telah Berkolaborasi Dengan</a>
+            <a href="/bec" onClick={(e) => { e.preventDefault(); onNavigate('bec'); }} className="hover:text-white transition-colors cursor-pointer">BEC</a>
+            <a href="/prestamedia" onClick={(e) => { e.preventDefault(); onNavigate('prestamedia'); }} className="hover:text-white transition-colors cursor-pointer">Prestamedia</a>
+            <a href="/contact" onClick={(e) => { e.preventDefault(); onNavigate('contact'); }} className="hover:text-white transition-colors cursor-pointer">Contact</a>
           </div>
 
           {/* Social Icons */}

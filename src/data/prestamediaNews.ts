@@ -193,7 +193,7 @@ Sarah Faizah, seorang mahasiswi penuh talenta dari Universitas Binawan, terus me
 
 Langkah Sarah di dunia *modeling* dan *pageant* tak bisa dipandang sebelah mata. Ia telah menorehkan namanya sebagai Finalis Duta Hijab Independen (2021) dan Icon Hijab Modelling Bekasi (2021). Prestasinya terus melesat dengan meraih Juara 1 "Best Fashion" di ajang Model Muslimah Indonesia (2021) dan Juara 3 "Best Style" oleh One Face Model Indonesia pada tahun yang sama. Kiprahnya berlanjut sebagai Finalis Icon Top Model Indonesia (2023), Ladies Hijab Ramadhan (2023), Miss Beauty Fashion (2023), hingga menjadi Finalis Adult Icon Modelling Fashion dan model search Bekasi Cycle 14 pada 2024. 
 
-[foto: sarah.JPG | Sarah Faizah saat penganugerahan The V Modelling Jakarta Batch 4.]
+[foto: SSarah.jpg | Sarah Faizah saat penganugerahan The V Modelling Jakarta Batch 4.]
 
 Kecintaannya pada dunia *fashion* juga membawanya tampil di berbagai panggung *runway* bergengsi, termasuk Fashion Crafty Banten, Depok Fashion Festival, Jakarta Fashion Runway 2025, hingga panggung Nusantara Heritage dan Renny by Unique yang diselenggarakan oleh Eka Hospital. Ia juga aktif sebagai model katalog dan *makeup* untuk berbagai agensi ternama. Dedikasinya di dunia *modeling* semakin diakui dengan penganugerahan gelar Student Favorite The V Modelling Jakarta Batch 4-2025.
 
@@ -361,3 +361,50 @@ const normalize = (e: NewsEntry): NewsItem => {
 export const PRESTAMEDIA_NEWS: NewsItem[] = NEWS.map(normalize).sort((a, b) =>
   b.date.localeCompare(a.date)
 );
+
+// URL slug ramah yang rapi, pendek, dan mudah dibaca (misal: sukkunsiregar)
+export const getFriendlySlug = (item: NewsItem): string => {
+  const s = item.slug.toLowerCase();
+  if (s.includes('sukkun')) return 'sukkunsiregar';
+  if (s.includes('zarin')) return 'rafielzarin';
+  if (s.includes('buhari')) return 'asbarbuhari';
+  if (s.includes('keysa') || s.includes('suarni')) return 'keysasuarni';
+  if (s.includes('sarah')) return 'sarahfaizah';
+  if (s.includes('charlos') || s.includes('titiahy')) return 'charlostitiahy';
+  if (s.includes('aluna') || s.includes('rahma')) return 'andialuna';
+  if (s.includes('ilham')) return 'ilhamdharmaputra';
+  return s;
+};
+
+// Helper untuk mencocokkan artikel dari URL (mendukung friendly slug 'sukkunsiregar', format pendek, maupun slug panjang)
+export const findNewsBySlug = (slugOrAlias: string): NewsItem | undefined => {
+  if (!slugOrAlias) return undefined;
+  const clean = slugOrAlias.trim().toLowerCase().replace(/\/+$/, '').replace(/^\/+/, '');
+  const cleanNoDash = clean.replace(/[^a-z0-9]/g, '');
+
+  return PRESTAMEDIA_NEWS.find((item) => {
+    const itemSlug = item.slug.toLowerCase();
+    const itemNoDash = itemSlug.replace(/[^a-z0-9]/g, '');
+    const friendly = getFriendlySlug(item).toLowerCase();
+
+    // 1. Cocok persis dengan slug asli atau friendly slug
+    if (itemSlug === clean || friendly === clean) return true;
+
+    // 2. Cocok tanpa tanda strip (misal 'sukkunsiregar' cocok dengan friendly atau bagian itemNoDash)
+    if (cleanNoDash === friendly) return true;
+    if (itemNoDash.includes(cleanNoDash) && cleanNoDash.length >= 5) return true;
+    if (cleanNoDash.includes(itemNoDash)) return true;
+
+    // 3. Keyword spesifik
+    if (cleanNoDash.includes('sukkun') && itemSlug.includes('sukkun')) return true;
+    if (cleanNoDash.includes('zarin') && itemSlug.includes('zarin')) return true;
+    if (cleanNoDash.includes('buhari') && itemSlug.includes('buhari')) return true;
+    if (cleanNoDash.includes('keysa') && itemSlug.includes('keysa')) return true;
+    if (cleanNoDash.includes('sarah') && itemSlug.includes('sarah')) return true;
+    if (cleanNoDash.includes('charlos') && itemSlug.includes('charlos')) return true;
+    if (cleanNoDash.includes('aluna') && itemSlug.includes('aluna')) return true;
+    if (cleanNoDash.includes('ilham') && itemSlug.includes('ilham')) return true;
+
+    return false;
+  });
+};
