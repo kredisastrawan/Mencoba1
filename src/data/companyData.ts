@@ -97,7 +97,7 @@ export const FEATURED_SERVICES: ServiceItem[] = [
     idealFor: "Pemilik Bisnis UMKM, Manajer Operasional, & Pemuda Ambisius",
     pricingTag: "Workshop & Corporate Training",
     badge: "Paling Populer",
-    image: "/src/assets/images/academy_masterclass_workshop_1791445493252.jpg"
+    image: "https://i.ibb.co.com/0ytnWzd7/3.jpg"
   },
   {
     id: "service-branding",
@@ -113,7 +113,7 @@ export const FEATURED_SERVICES: ServiceItem[] = [
     idealFor: "Founder Startup, Direktur Bisnis, Tokoh Komunitas, & Profesional",
     pricingTag: "Executive Retainer",
     badge: "Layanan Eksklusif",
-    image: "/src/assets/images/personal_branding_portrait_1791445526850.jpg"
+    image: "https://i.ibb.co.com/fGMS8v2w/4.jpg"
   },
   {
     id: "service-presta",
@@ -129,7 +129,7 @@ export const FEATURED_SERVICES: ServiceItem[] = [
     idealFor: "Pelajar Berprestasi, Atlet/Kreator Muda, Dosen, & Institusi Pendidikan",
     pricingTag: "Langganan VIP / Paket Institusi",
     badge: "Media Partner Resmi",
-    image: "/src/assets/images/hero_bali_youth_summit_1791445461875.jpg"
+    image: "https://i.ibb.co.com/27crY6gK/5.jpg"
   },
   {
     id: "service-activation",

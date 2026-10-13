@@ -15,7 +15,7 @@ export const CollaborateBannerMockup: React.FC<CollaborateBannerMockupProps> = (
         <div className="relative rounded-3xl overflow-hidden shadow-xl min-h-[280px] sm:min-h-[340px] flex items-center">
           {/* Panoramic Coastline Background */}
           <img
-            src="/src/assets/images/bali_coastal_landscape_1791447090899.jpg"
+            src="https://i.ibb.co.com/LdGwY2cV/2.jpg"
             alt="Pesona Alam Bali - Kolaborasi Bersama BYE"
             referrerPolicy="no-referrer"
             className="absolute inset-0 w-full h-full object-cover"

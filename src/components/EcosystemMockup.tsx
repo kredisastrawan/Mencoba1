@@ -15,19 +15,19 @@ export const EcosystemMockup: React.FC<EcosystemMockupProps> = ({
       id: 'academy',
       title: 'Academy & Masterclass',
       description: 'Kelas, workshop, dan masterclass bersama praktisi berpengalaman.',
-      image: '/src/assets/images/academy_masterclass_workshop_1791445493252.jpg',
+      image: 'https://i.ibb.co.com/0ytnWzd7/3.jpg',
     },
     {
       id: 'branding',
       title: 'Personal Branding Management',
       description: 'Bangun citra diri dan personal brand untuk peluang yang lebih luas.',
-      image: '/src/assets/images/personal_branding_portrait_1791445526850.jpg',
+      image: 'https://i.ibb.co.com/fGMS8v2w/4.jpg',
     },
     {
       id: 'media',
       title: 'Presta Media',
       description: 'Media kreatif untuk mengangkat cerita, karya, dan dampak anak muda.',
-      image: '/src/assets/images/creative_media_production_1791447078548.jpg',
+      image: 'https://i.ibb.co.com/27crY6gK/5.jpg',
     },
   ];
 

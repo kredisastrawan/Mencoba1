@@ -12,7 +12,7 @@ export const AboutBannerMockup: React.FC<AboutBannerMockupProps> = ({ onLearnMor
         <div className="relative rounded-3xl overflow-hidden shadow-xl min-h-[360px] sm:min-h-[440px] flex items-center">
           {/* Background image of Ulun Danu Beratan Lake Temple */}
           <img
-            src="/src/assets/images/bali_ulun_danu_temple_1791447051022.jpg"
+            src="https://i.ibb.co.com/Ng2PZ4mV/1.jpg"
             alt="Pura Ulun Danu Beratan Bali - About Bali Youth Evolution"
             referrerPolicy="no-referrer"
             className="absolute inset-0 w-full h-full object-cover"
