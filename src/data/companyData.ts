@@ -8,8 +8,8 @@ export const COMPANY_INFO = {
   email: "baliyouthevolution@gmail.com",
   instagram: "@baliyouthevolution",
   instagramUrl: "https://instagram.com/baliyouthevolution",
-  whatsappNumber: "+6281234567890", // Official contact
-  whatsappDisplay: "+62 812-3456-7890",
+  whatsappNumber: "+6281997841103", // Official admin contact
+  whatsappDisplay: "+62 819-9784-1103",
   location: "Denpasar & Kuta, Bali, Indonesia",
   eventHighlight: "Mega-Event Agustus 2026",
   vision: "Bali Youth Evolution (BYE) merupakan sebuah platform pengembangan generasi muda yang hadir untuk mendorong anak muda agar terus belajar, berkembang, berkolaborasi, dan menciptakan dampak positif. BYE menjadi ruang bagi pelajar, mahasiswa, komunitas, dan masyarakat muda untuk mendapatkan wawasan, mengembangkan keterampilan, memperluas relasi, serta mengeksplorasi berbagai peluang di era digital.",

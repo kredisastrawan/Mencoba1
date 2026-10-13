@@ -91,7 +91,7 @@ const NEWS: NewsEntry[] = [
     dateline: 'JAKARTA, PRESTAMEDIA',
     excerpt:
       'Masa muda adalah momentum emas untuk membawa perubahan, dan M Rafiel Zarin Arifin membuktikannya lewat advokasi lingkungan, Duta Kampus FEB Trisakti, hingga forum perdamaian internasional.',
-    cover: '1 zarin.jpg',
+    cover: 'https://i.ibb.co.com/PG5Zptr4/1-zarin-1.jpg',
     coverCaption:
       'M Rafiel Zarin Arifin: Runner Up 1 Putera Pendidikan Remaja Jakarta & Honourable Delegate Indonesia Korea Student Peace Summit.',
     text: `
@@ -99,7 +99,7 @@ Masa muda adalah momentum emas untuk membawa perubahan, dan M Rafiel Zarin Arifi
 
 Kepeduliannya yang mendalam terhadap kelestarian bumi membawanya sukses meraih posisi Runner Up 1 Putera Pendidikan Remaja Jakarta. Melalui ajang ini, Rafiel tidak sekadar berkompetisi untuk sebuah gelar, melainkan membawa advokasi nyata yang membumi: membangun kesadaran lingkungan lewat kebiasaan pemilahan sampah. Program kerja yang ia gagas ini menargetkan edukasi berkelanjutan mulai dari bangku Sekolah Dasar (SD) hingga Sekolah Menengah Atas (SMA), sebuah inisiatif krusial untuk membentuk karakter generasi peduli ekosistem sejak usia dini.
 
-[foto: 2 zarin.jpg | M Rafiel Zarin Arifin dalam dedikasi kepemudaan dan representasi aksi inspiratif pemuda Indonesia.]
+[foto: https://i.ibb.co.com/JRQ3jMD7/2-zarin-1.jpg | M Rafiel Zarin Arifin dalam dedikasi kepemudaan dan representasi aksi inspiratif pemuda Indonesia.]
 
 Kapasitas kepemimpinan dan kecakapan komunikasi Rafiel juga bersinar terang di lingkungan akademis. Pada tahun 2025, ia dinobatkan sebagai Runner Up 2 Duta Kampus Fakultas Ekonomi dan Bisnis (FEB) Universitas Trisakti. Sebagai wajah representatif mahasiswa FEB, kontribusinya sangat terasa di dalam kampus. Ia kerap dipercaya menjadi motor penggerak dalam berbagai kegiatan mahasiswa, mulai dari memandu jalannya acara sebagai Master of Ceremony (MC) hingga terlibat langsung dalam berbagai perlombaan yang membawa nama baik fakultas.
 
@@ -142,7 +142,7 @@ Bagi Asbar, rentetan prestasi yang ia raih saat ini adalah sebuah proses panjang
     author: 'Redaksi Prestamedia',
     dateline: 'DENPASAR, PRESTAMEDIA',
     excerpt: 'Berawal dari mendaftar diam-diam, Putu Ayu Suarni (Keysa) berhasil membuktikan keberaniannya dengan meraih gelar Puteri Bali Persahabatan 2025. Ia menggabungkan pesona dunia modeling dengan ketangguhan seorang pendaki.',
-    cover: 'Suarni.png',
+    cover: 'https://i.ibb.co.com/99P9yJsn/Suarni.png',
     coverCaption: 'Putu Ayu Suarni (Keysa) dengan deretan piala dan penghargaan yang diraihnya.',
     text: `
 Nama lengkapnya Putu Ayu Suarni (18), siswi yang menyelesaikan studinya di SMK Kesehatan Bali Medika Denpasar dan kini melangkah ke ITEKES BALI. Namun, di berbagai kesempatan, hampir semua orang lebih akrab memanggilnya Keysa—sebuah nama yang lahir dari hobi *cosplay* yang sempat digelutinya, dan kini justru melekat erat menjadi bagian dari identitas dirinya.
@@ -153,7 +153,7 @@ Gadis kelahiran Denpasar, 8 Mei 2007 ini tumbuh dalam keluarga yang menjunjung t
 
 Meski lekat dengan ilmu kesehatan, dunia Keysa nyatanya jauh lebih luas dari sekadar ruang kelas atau laboratorium praktik. Sejak SMP, ia sudah akrab dengan panggung *modeling*. Lewat dunia inilah ia banyak belajar tentang pembentukan karakter, membangun kepercayaan diri, dan cara merepresentasikan diri dengan elegan di hadapan publik. 
 
-[foto: SSuarni.png | Keysa berpose anggun saat dinobatkan meraih gelar Puteri Bali Persahabatan 2025.]
+[foto: https://i.ibb.co.com/rR9LB0dw/SSuarni.png | Keysa berpose anggun saat dinobatkan meraih gelar Puteri Bali Persahabatan 2025.]
 
 Di luar itu, Keysa adalah remaja dengan minat yang sangat beragam. Selain *modeling*, ia juga gemar menari (*dance*), *cosplay*, hingga mendaki gunung. Hobi mendaki ini mulai ia tekuni sejak duduk di bangku SMK. Ketangguhannya tak bisa diremehkan; hingga kini, sepuluh puncak gunung di Bali sudah berhasil ia taklukkan. 
 
@@ -186,14 +186,14 @@ Saat ditanya mengenai kehidupan pribadinya, khususnya urusan asmara, Keysa menut
     author: 'Redaksi Prestamedia',
     dateline: 'JAKARTA, PRESTAMEDIA',
     excerpt: 'Mahasiswi Universitas Binawan, Sarah Faizah, membuktikan bahwa usia muda bukanlah halangan untuk berkarya dan berprestasi di berbagai bidang, mulai dari modeling, kepenulisan, hingga advokasi kepemudaan.',
-    cover: 'SSarah.jpg',
+    cover: 'https://i.ibb.co.com/fdpYtMzS/image.png',
     coverCaption: 'Sarah Faizah dengan berbagai selempang penghargaan dan sertifikat prestasinya.',
     text: `
 Sarah Faizah, seorang mahasiswi penuh talenta dari Universitas Binawan, terus mengukir prestasi gemilang yang menginspirasi generasi muda. Perjalanannya membuktikan dedikasi yang tak kenal lelah dalam berbagai bidang, mulai dari dunia *modeling*, kepenulisan sastra, hingga perannya sebagai penggerak di komunitas kepemudaan dan pendidikan.
 
 Langkah Sarah di dunia *modeling* dan *pageant* tak bisa dipandang sebelah mata. Ia telah menorehkan namanya sebagai Finalis Duta Hijab Independen (2021) dan Icon Hijab Modelling Bekasi (2021). Prestasinya terus melesat dengan meraih Juara 1 "Best Fashion" di ajang Model Muslimah Indonesia (2021) dan Juara 3 "Best Style" oleh One Face Model Indonesia pada tahun yang sama. Kiprahnya berlanjut sebagai Finalis Icon Top Model Indonesia (2023), Ladies Hijab Ramadhan (2023), Miss Beauty Fashion (2023), hingga menjadi Finalis Adult Icon Modelling Fashion dan model search Bekasi Cycle 14 pada 2024. 
 
-[foto: SSarah.jpg | Sarah Faizah saat penganugerahan The V Modelling Jakarta Batch 4.]
+[foto: https://i.ibb.co.com/Ng6VxjJz/Screenshot-2026-10-13-at-13-09-22.png | Sarah Faizah saat penganugerahan The V Modelling Jakarta Batch 4.]
 
 Kecintaannya pada dunia *fashion* juga membawanya tampil di berbagai panggung *runway* bergengsi, termasuk Fashion Crafty Banten, Depok Fashion Festival, Jakarta Fashion Runway 2025, hingga panggung Nusantara Heritage dan Renny by Unique yang diselenggarakan oleh Eka Hospital. Ia juga aktif sebagai model katalog dan *makeup* untuk berbagai agensi ternama. Dedikasinya di dunia *modeling* semakin diakui dengan penganugerahan gelar Student Favorite The V Modelling Jakarta Batch 4-2025.
 
@@ -214,14 +214,14 @@ Dengan terpilihnya ia sebagai salah satu mahasiswa terbaik untuk magang di RSPG 
     author: 'Redaksi Prestamedia',
     dateline: 'DENPASAR, PRESTAMEDIA',
     excerpt: 'Pelajar SMA Negeri 1 Halmahera Barat ini akan membawa nama Maluku Utara ke Pemilihan Duta Pariwisata Nasional di Bali, 4–8 November 2026, dengan bekal deretan prestasi dan pengalaman kepemimpinan.',
-    cover: 'Charlostitiahy.jpeg',
+    cover: 'https://i.ibb.co.com/WWmrXVWj/image.png',
     coverCaption: 'Charlos Imanuel Titiahy, pelajar asal Halmahera Barat, Maluku Utara.',
     text: `
 Charlos Imanuel Titiahy, pelajar SMA Negeri 1 Halmahera Barat asal Halmahera Barat, Provinsi Maluku Utara, akan mewakili Maluku Utara dalam Pemilihan Duta Pariwisata tingkat Nasional yang akan digelar di Bali pada 4–8 November 2026.
 
 Kesempatan ini menjadi salah satu pencapaian penting dalam perjalanan Charlos di bidang kepemudaan, kegiatan duta, kepemimpinan, dan pengembangan potensi daerah. Sebelumnya, ia telah aktif mengikuti berbagai kompetisi dan kegiatan di tingkat kabupaten, provinsi, hingga nasional.
 
-[foto: ccharlostitiahy.jpeg | Charlos Imanuel Titiahy dengan selempang Duta Pariwisata Maluku Utara.]
+[foto: https://i.ibb.co.com/TMSXfKhX/image.png | Charlos Imanuel Titiahy dengan selempang Duta Pariwisata Maluku Utara.]
 
 Di bidang kepemudaan, Charlos meraih Juara 2 Putra Duta Generasi Berencana (GenRe) tingkat Provinsi Maluku Utara pada 2025. Pada 2026, ia kembali menorehkan hasil dengan menjadi Juara 1 pemilihan FORPIS tingkat Provinsi Maluku Utara.
 
@@ -244,14 +244,14 @@ Prestamedia mengucapkan semoga sukses untuk Charlos Imanuel Titiahy dalam membaw
     author: 'Redaksi Prestamedia',
     dateline: 'MAKASSAR, PRESTAMEDIA',
     excerpt: 'Di usia 13 tahun, pelajar SMPN 06 Makassar ini meraih medali perunggu lomba bahasa Inggris tingkat provinsi, honorable mention di International MUN, dan menjadi ambassador-nya.',
-    cover: 'Rahma.jpeg',
+    cover: 'https://i.ibb.co.com/B586DQR7/image.png',
     coverCaption: 'Andi Aluna Mikaila, pelajar SMPN 06 Makassar.',
     text: `
 Di usia yang baru 13 tahun, Andi Aluna Mikaila, pelajar SMPN 06 Makassar, sudah mengoleksi deretan prestasi di bidang bahasa Inggris, simulasi sidang Perserikatan Bangsa-Bangsa (Model United Nations/MUN), hingga seni suara.
 
 Capaian itu antara lain medali perunggu pada lomba bahasa Inggris tingkat provinsi. Prestasi tersebut diabadikan dalam momen bersalaman dengan kepala sekolah.
 
-[foto: rahma.png | Andi Aluna Mikaila]
+[foto: https://i.ibb.co.com/YB21rN3x/image.png | Andi Aluna Mikaila]
 
 Kemampuan berbahasa Inggrisnya juga terasah lewat story telling. Aluna kerap menjuarai lomba story telling bahasa Inggris, dengan raihan juara 1, 2, dan 3 di tingkat sekolah maupun provinsi. Di luar bahasa, ia juga sering mengikuti lomba vocal solo.
 
@@ -271,7 +271,7 @@ Prestamedia mengucapkan selamat kepada Andi Aluna Mikaila atas deretan prestasin
     author: 'Redaksi Prestamedia',
     dateline: 'DENPASAR, PRESTAMEDIA',
     excerpt: 'Terpilih sebagai Duta Pariwisata Kalimantan Barat 2026 pada Juli lalu, Ilham Dharma Putra kini bersiap menuju ajang Duta Pariwisata Indonesia 2026 di Bali, 4–7 November.',
-    cover: 'ILHAM.jpg',
+    cover: 'https://i.ibb.co.com/8DHpPdjs/image.png',
     coverCaption: 'Ilham Dharma Putra, Duta Pariwisata Kalimantan Barat 2026.',
     text: `
 Duta Pariwisata Kalimantan Barat 2026, Ilham Dharma Putra, kini memasuki tahap persiapan menuju ajang Duta Pariwisata Indonesia 2026 yang akan digelar di Bali pada 4–7 November 2026. Di panggung nasional tersebut, ia akan membawa nama Kalimantan Barat.
@@ -280,7 +280,7 @@ Ilham terpilih sebagai Duta Pariwisata Kalimantan Barat pada Juli 2026. Gelar du
 
 Sejak terpilih, Ilham aktif berkolaborasi, mengedukasi, dan menginformasikan hal-hal seputar pariwisata kepada masyarakat Kalimantan Barat, terutama generasi muda. Edukasi dan kolaborasi menjadi jalan untuk mendekatkan dunia pariwisata dengan anak muda di daerahnya.
 
-[foto: ILHAM.jpeg | Ilham Dharma Putra bersama para peserta dalam salah satu kegiatannya.]
+[foto: https://i.ibb.co.com/p6XmpYyW/image.png | Ilham Dharma Putra bersama para peserta dalam salah satu kegiatannya.]
 
 Fokus pada generasi muda bukan tanpa alasan. Anak muda adalah kelompok yang paling dekat dengan ruang digital, tempat informasi tentang destinasi dan budaya kini banyak dibagikan, sehingga mereka berpotensi menjadi pelaku sekaligus penyampai cerita pariwisata daerahnya. Kalimantan Barat sendiri memiliki keragaman budaya dan alam yang layak dikenal lebih luas.
 
@@ -300,7 +300,7 @@ Perjalanan Ilham, dari terpilih pada Juli hingga bersiap menuju panggung nasiona
     dateline: 'DENPASAR, PRESTAMEDIA',
     excerpt:
       'Dari tingkat kampus, kabupaten, hingga provinsi, Sukkun Siregar membuktikan bahwa konsistensi membuahkan hasil di ajang Duta Generasi Berencana (Genre).',
-    cover: 'prestamedia-sukkun-bali.webp',
+    cover: 'https://i.ibb.co.com/C3DtJbhs/image.png',
     coverCaption: 'Sukkun Siregar bersama para pemenang pada malam final Duta Genre Bali 2026.',
     body: [
       'Dedikasi dan konsistensi menjadi dua kata yang paling tepat untuk menggambarkan perjalanan Sukkun Siregar di ajang pemilihan Duta Generasi Berencana (Genre). Dalam dua tahun terakhir, ia mencetak prestasi berjenjang, mulai dari tingkat kampus dan kabupaten hingga panggung Provinsi Bali.',
@@ -312,7 +312,7 @@ Perjalanan Ilham, dari terpilih pada Juli hingga bersiap menuju panggung nasiona
     ],
     photos: [
       {
-        file: 'prestamedia-sukkun-buleleng.webp',
+        file: 'https://i.ibb.co.com/JR8TnrXK/image.png',
         caption:
           'Sukkun Siregar dalam busana adat Bali dengan selempang "Runner Up 1 Duta Genre Buleleng Putra".',
         after: 2,
