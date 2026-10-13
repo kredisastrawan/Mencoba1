@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight, Newspaper } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Newspaper, Award, ExternalLink } from 'lucide-react';
 import { PRESTAMEDIA_NEWS, NewsItem, newsImg, findNewsBySlug, getFriendlySlug } from '../../data/prestamediaNews';
 
 const formatDate = (iso: string) =>
@@ -129,6 +129,28 @@ const ArticleDetail: React.FC<{
             </React.Fragment>
           ))}
         </div>
+
+        {/* Box Submit Prestasi di akhir artikel */}
+        <div className="mt-12 p-6 rounded-2xl bg-sky-50 border border-sky-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="space-y-1">
+            <div className="flex items-center gap-2 text-xs font-bold text-[#0284c7] uppercase">
+              <Award className="w-4 h-4 text-amber-500" />
+              <span>Punya Prestasi Serupa?</span>
+            </div>
+            <p className="text-sm font-semibold text-slate-800">
+              Submit prestasi dan kisah inspiratifmu agar diliput di Prestamedia!
+            </p>
+          </div>
+          <a
+            href="https://forms.gle/Bw9pTkoNiHrwtuW29"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 bg-[#0284c7] hover:bg-sky-700 text-white font-bold text-xs rounded-xl shadow-xs transition-colors"
+          >
+            <span>Submit Prestasi</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
       </div>
 
       {others.length > 0 && (
@@ -186,17 +208,58 @@ export const PrestamediaView: React.FC<PrestamediaViewProps> = ({
   return (
     <section className="py-12 sm:py-16 bg-slate-50 min-h-[60vh]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-10 max-w-2xl">
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0284c7] mb-3">
-            <Newspaper className="w-4 h-4" />
-            <span>Publikasi Media Prestasi</span>
+        <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-slate-200">
+          <div className="max-w-2xl">
+            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0284c7] mb-3">
+              <Newspaper className="w-4 h-4" />
+              <span>Publikasi Media Prestasi</span>
+            </div>
+            <h1 className="text-3xl sm:text-5xl font-extrabold text-[#0284c7] tracking-tight">
+              Prestamedia
+            </h1>
+            <p className="mt-3 text-slate-600 leading-relaxed text-sm sm:text-base">
+              Kabar prestasi dan aksi inspiratif generasi muda, dari panggung daerah, nasional hingga forum internasional.
+            </p>
           </div>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-[#0284c7] tracking-tight">
-            Prestamedia
-          </h1>
-          <p className="mt-3 text-slate-600 leading-relaxed">
-            Kabar prestasi dan aksi inspiratif generasi muda, dari panggung daerah, nasional hingga forum internasional.
-          </p>
+
+          {/* Kolom / Tombol Submit Prestasi mengarah ke Google Form */}
+          <div className="shrink-0 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+            <a
+              href="https://forms.gle/Bw9pTkoNiHrwtuW29"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 bg-[#0284c7] hover:bg-sky-700 text-white font-bold text-sm rounded-2xl shadow-md hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 group"
+            >
+              <Award className="w-4 h-4 text-amber-300 group-hover:scale-110 transition-transform" />
+              <span>Submit Prestasi</span>
+              <ExternalLink className="w-4 h-4 opacity-80 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
+            </a>
+          </div>
+        </div>
+
+        {/* Banner Ajakan Kolom Submit Prestasi */}
+        <div className="mb-10 p-5 sm:p-6 rounded-3xl bg-gradient-to-r from-sky-500 via-sky-600 to-[#0284c7] text-white shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 border border-sky-400/30">
+          <div className="space-y-1.5 max-w-2xl">
+            <div className="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-sky-200 bg-sky-900/30 px-3 py-1 rounded-full">
+              <Award className="w-3.5 h-3.5 text-amber-300" />
+              <span>Punya Prestasi yang Ingin Diliput?</span>
+            </div>
+            <h2 className="text-lg sm:text-xl font-extrabold tracking-tight text-white">
+              Kirimkan Kisah & Capaian Prestasimu ke Prestamedia
+            </h2>
+            <p className="text-xs sm:text-sm text-sky-100 leading-relaxed">
+              Jadilah inspirasi bagi generasi muda lainnya! Tim redaksi kami siap mempublikasikan capaian hebatmu ke jejaring Bali Youth Evolution.
+            </p>
+          </div>
+          <a
+            href="https://forms.gle/Bw9pTkoNiHrwtuW29"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 inline-flex items-center gap-2 px-5 py-3 bg-white text-[#0284c7] hover:bg-sky-50 font-bold text-xs sm:text-sm rounded-xl shadow-md transition-all hover:scale-105"
+          >
+            <span>Isi Formulir Prestasi</span>
+            <ExternalLink className="w-4 h-4" />
+          </a>
         </div>
 
         {PRESTAMEDIA_NEWS.length === 0 ? (
