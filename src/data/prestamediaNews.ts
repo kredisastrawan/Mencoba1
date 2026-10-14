@@ -82,6 +82,62 @@ Paragraf ketiga muncul setelah foto di atas.
 */
 const NEWS: NewsEntry[] = [
   {
+    slug: 'muhammad-zahir-ali-santri-bin-baz-yogyakarta-parlemen-remaja-2026',
+    title: 'Mengubah Mimpi Menjadi Nyata: Kisah Muhammad Zahir Ali, Santri yang Melangkah ke Parlemen Remaja 2026',
+    category: 'Pendidikan & Kepemudaan',
+    date: '2026-10-14',
+    author: 'Redaksi Prestamedia',
+    dateline: 'YOGYAKARTA, PRESTAMEDIA',
+    excerpt: 'Terpilihnya Muhammad Zahir Ali dalam ajang Parlemen Remaja 2026 membuktikan bahwa seorang santri memiliki kesempatan dan kemampuan yang setara untuk belajar tentang politik dan tata negara di tingkat nasional.',
+    cover: 'https://i.ibb.co.com/ZRQ6Dfmr/HEN06566-DIM1-Muhammad-Zahir-Ali.jpg',
+    coverCaption: 'Muhammad Zahir Ali saat menandatangani dokumen dalam simulasi sidang di Ruang Rapat Paripurna DPR RI, Senayan.',
+    text: `
+Menginjakkan kaki di Gedung Dewan Perwakilan Rakyat Republik Indonesia di Senayan dan berada di ruangan tempat undang-undang disahkan merupakan pengalaman yang terasa belum sepenuhnya nyata bagi Muhammad Zahir Ali. Siswa asal MAS Islamic Centre Bin Baz Yogyakarta ini secara resmi terpilih menjadi salah satu delegasi Parlemen Remaja 2026.
+
+Datang dari latar belakang seorang santri, Zahir sempat merasa bahwa dirinya tidak memiliki rekam jejak prestasi yang mencolok dibandingkan rekan-rekannya yang lain. Namun, kesempatan untuk duduk sejajar dengan siswa-siswi berprestasi dari seluruh penjuru Indonesia memberikan kesadaran dan wawasan baru baginya.
+
+Melalui pencapaian ini, Zahir ingin menyampaikan pesan yang kuat bahwa seorang santri dan santriwati juga merupakan pelajar yang memiliki kapasitas komprehensif. Mereka tidak hanya dituntut untuk mendalami ilmu agama, mentadaburi Al-Quran, dan mengkaji Hadis, tetapi juga memiliki hak serta kemampuan untuk belajar bernegara, memahami dinamika politik, dan berkontribusi bagi kemajuan bangsa.
+
+[foto: https://i.ibb.co.com/7dTsLjbv/IMG-20261002-WA0010-DIM1-Muhammad-Zahir-Ali.jpg | Suasana para delegasi saat mengikuti rangkaian kegiatan Parlemen Remaja 2026 di Senayan.]
+
+Perjalanan Zahir menuju Senayan bermula dari sebuah mimpi yang sederhana. Dari mimpi tersebut, tumbuh harapan besar yang kemudian diiringi dengan usaha yang gigih. Ia sangat meyakini bahwa segala ikhtiar tersebut tidak akan membuahkan hasil tanpa adanya doa dan pertolongan dari Tuhan Yang Maha Esa yang senantiasa membuka jalan baginya hingga sampai di titik ini.
+
+Keikutsertaannya dalam Parlemen Remaja 2026 sekaligus menjadi pembuktian pribadi yang sangat mendalam. Zahir memiliki keinginan yang tulus untuk memperlihatkan kepada kedua orang tuanya bahwa ia mampu meraih prestasi yang membanggakan, sebagaimana yang selalu mereka dambakan. 
+
+Langkah dan dedikasi Zahir membuktikan bahwa latar belakang sekolah maupun status sebagai santri bukanlah batasan, melainkan fondasi yang kuat untuk melahirkan calon pemimpin masa depan yang berwawasan kebangsaan.
+`,
+  },
+{
+    slug: 'aulya-gyfar-firmanda-usk-top-10-duta-genre-indonesia-2026',
+    title: 'Inisiasi Program RANUP, Mahasiswa USK Aulya Gyfar Raih Penghargaan Duta GenRe Indonesia 2026',
+    category: 'Pendidikan & Kepemudaan',
+    date: '2026-10-14',
+    author: 'Redaksi Prestamedia',
+    dateline: 'BANDA ACEH, PRESTAMEDIA',
+    excerpt: 'Berawal dari gelar Duta GenRe Aceh 2025, mahasiswa Universitas Syiah Kuala ini sukses melaju ke tingkat nasional dan membawa gagasan edukasi digital bagi remaja.',
+    cover: 'https://i.ibb.co.com/Gf7mYSMp/Screenshot-2026-10-14-at-21-27-16.png',
+    coverCaption: 'Aulya Gyfar Firmanda memamerkan piala, sertifikat, serta selempang penghargaan Sosial Media Inspirator Putera Duta GenRe Indonesia 2026[cite: 15].',
+    text: `
+Bagi sebagian orang, prestasi diukur dari seberapa banyak gelar dan piala yang terkumpul. Namun, bagi Aulya Gyfar Firmanda, mahasiswa Program Studi Teknik Pertambangan, Fakultas Teknik, Universitas Syiah Kuala, prestasi sejati adalah ketika sebuah pencapaian mampu menjadi jalan untuk menghadirkan perubahan dan memberikan manfaat luas bagi masyarakat.
+
+Prinsip pengabdian itulah yang ia pegang teguh dalam menjalankan perannya sebagai Duta GenRe. Setelah sukses dinobatkan sebagai Duta GenRe Aceh Putra 2025, Aulya tidak berhenti pada pencapaian di tingkat provinsi. Ia melanjutkan langkahnya sebagai Finalis Duta GenRe Indonesia 2026 dalam ajang Apresiasi Duta dan Jambore Ajang Kreativitas GenRe Nasional (ADUJAKNAS) 2026 yang digelar di Jakarta.
+
+Pada ajang berskala nasional yang diselenggarakan oleh Kementerian Kependudukan dan Pembangunan Keluarga (Kemendukbangga/BKKBN) berkolaborasi dengan Forum GenRe Indonesia tersebut, Aulya kembali menorehkan hasil yang membanggakan. Ia berhasil masuk dalam jajaran Top 10 Duta GenRe Indonesia 2026 sekaligus meraih penghargaan spesifik sebagai Juara Sosial Media Inspirator Putera Duta GenRe Indonesia 2026.
+
+[foto: https://i.ibb.co.com/gFT8pLZS/Screenshot-2026-10-14-at-21-27-37.png | Aulya Gyfar Firmanda berpose menunjukkan salam GenRe saat mewakili Provinsi Aceh dalam ajang nasional di Jakarta[cite: 16].]
+
+Tidak sekadar mengandalkan gelar, Aulya merealisasikan visinya melalui sebuah program inovatif bernama RANUP (Remaja Aktif Naikkan Usia Perkawinan). RANUP merupakan inovasi berbasis Pusat Informasi dan Konseling Remaja (PIK-R) yang menggunakan pendekatan perjalanan pembelajaran (Learning Journey). Program ini hadir sebagai bentuk intervensi strategis untuk memperkuat Pendewasaan Usia Perkawinan (PUP), mendorong remaja agar lebih matang dalam merencanakan pendidikan dan karier, serta mempersiapkan kehidupan berkeluarga yang berkualitas.
+
+Gagasan RANUP tidak muncul secara instan. Inisiatif ini digali dari lebih dari 200 refleksi yang terkumpul melalui metode Letter from the Heart dan aspirasi Voice Corner. Dari kumpulan suara tersebut, Aulya memetakan secara komprehensif berbagai pengalaman, tantangan, serta harapan nyata para remaja terhadap keluarga dan masa depan mereka.
+
+Melalui program RANUP, Aulya berupaya menghadirkan metode edukasi yang komunikatif dan dua arah. Ia tidak sekadar menyampaikan informasi, melainkan menyediakan ruang aman bagi remaja untuk belajar, merefleksikan diri, dan bertumbuh bersama.
+
+Sejalan dengan penghargaan sebagai Sosial Media Inspirator yang diraihnya, Aulya berkomitmen untuk terus menghubungkan inovasi di lapangan dengan metode edukasi digital. Dengan langkah tersebut, ia meyakini pesan pemberdayaan remaja dapat menjangkau sasaran yang jauh lebih luas. 
+
+Bagi pemuda asal Aceh ini, kebanggaan sejati bukanlah saat namanya dipanggil ke atas panggung untuk menerima penghargaan, melainkan ketika gagasan yang ia perjuangkan mampu bertransformasi menjadi sebuah gerakan nyata yang membawa dampak positif, dari Aceh untuk Indonesia.
+`,
+  },
+  {
     slug: 'sayyidah-kezia-sman-1-anjatan-lolos-parlemen-remaja-dpr-ri-2026',
     title: 'Akhiri Penantian 5 Tahun Indramayu, Siswi SMAN 1 Anjatan Lolos Seleksi Parlemen Remaja DPR RI 2026',
     category: 'Pendidikan & Kepemudaan',
