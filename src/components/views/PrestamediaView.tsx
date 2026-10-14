@@ -237,30 +237,6 @@ export const PrestamediaView: React.FC<PrestamediaViewProps> = ({
           </div>
         </div>
 
-        {/* Banner Ajakan Kolom Submit Prestasi */}
-        <div className="mb-10 p-5 sm:p-6 rounded-3xl bg-gradient-to-r from-sky-500 via-sky-600 to-[#0284c7] text-white shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 border border-sky-400/30">
-          <div className="space-y-1.5 max-w-2xl">
-            <div className="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-sky-200 bg-sky-900/30 px-3 py-1 rounded-full">
-              <Award className="w-3.5 h-3.5 text-amber-300" />
-              <span>Punya Prestasi yang Ingin Diliput?</span>
-            </div>
-            <h2 className="text-lg sm:text-xl font-extrabold tracking-tight text-white">
-              Kirimkan Kisah & Capaian Prestasimu ke Prestamedia
-            </h2>
-            <p className="text-xs sm:text-sm text-sky-100 leading-relaxed">
-              Jadilah inspirasi bagi generasi muda lainnya! Tim redaksi kami siap mempublikasikan capaian hebatmu ke jejaring Bali Youth Evolution.
-            </p>
-          </div>
-          <a
-            href="https://forms.gle/Bw9pTkoNiHrwtuW29"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 inline-flex items-center gap-2 px-5 py-3 bg-white text-[#0284c7] hover:bg-sky-50 font-bold text-xs sm:text-sm rounded-xl shadow-md transition-all hover:scale-105"
-          >
-            <span>Isi Formulir Prestasi</span>
-            <ExternalLink className="w-4 h-4" />
-          </a>
-        </div>
 
         {PRESTAMEDIA_NEWS.length === 0 ? (
           <p className="text-slate-500">Belum ada berita.</p>
