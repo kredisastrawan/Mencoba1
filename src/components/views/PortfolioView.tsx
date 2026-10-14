@@ -1,6 +1,7 @@
 import React from 'react';
-import { PARTNER_LOGOS, logoSrc } from '../../data/partnerLogos';
+import { PARTNER_LOGOS } from '../../data/partnerLogos';
 import { PortfolioItems } from '../PortfolioItems';
+import { AutoPartnerLogo } from '../AutoPartnerLogo';
 
 export const PortfolioView: React.FC = () => {
   return (
@@ -52,18 +53,13 @@ export const PortfolioView: React.FC = () => {
               WebkitMaskImage: 'linear-gradient(to right, transparent, black 5%, black 95%, transparent)',
             }}
           >
-            <div className="bye-portfolio-track items-center py-2">
+            <div className="bye-portfolio-track items-center py-4">
               {[...PARTNER_LOGOS, ...PARTNER_LOGOS].map((p, idx) => (
                 <div
                   key={idx}
-                  className="shrink-0 mx-8 sm:mx-12 md:mx-14 flex items-center justify-center select-none group"
+                  className="shrink-0 mx-7 sm:mx-12 md:mx-16 flex items-center justify-center select-none group h-28 sm:h-36 md:h-40"
                 >
-                  <img
-                    src={logoSrc(p.file)}
-                    alt={p.name}
-                    draggable={false}
-                    className="h-24 sm:h-32 md:h-36 w-auto max-w-[220px] sm:max-w-[280px] md:max-w-[340px] object-contain transition-transform duration-300 group-hover:scale-105"
-                  />
+                  <AutoPartnerLogo partner={p} variant="marquee" />
                 </div>
               ))}
             </div>

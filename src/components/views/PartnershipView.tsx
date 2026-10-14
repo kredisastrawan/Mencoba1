@@ -1,5 +1,6 @@
 import React from 'react';
-import { PARTNER_LOGOS, logoSrc } from '../../data/partnerLogos';
+import { PARTNER_LOGOS } from '../../data/partnerLogos';
+import { AutoPartnerLogo } from '../AutoPartnerLogo';
 
 export const PartnershipView: React.FC = () => {
   return (
@@ -14,20 +15,13 @@ export const PartnershipView: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 sm:gap-14 items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-10 items-center">
           {PARTNER_LOGOS.map((p, idx) => (
             <div
               key={idx}
-              className="flex items-center justify-center p-3 transition-transform duration-300 hover:scale-105"
+              className="w-full h-32 sm:h-36 md:h-44 flex items-center justify-center p-3 group transition-transform duration-300 hover:scale-105"
             >
-              <div className="w-full h-32 sm:h-40 md:h-44 flex items-center justify-center">
-                <img
-                  src={logoSrc(p.file)}
-                  alt={p.name}
-                  draggable={false}
-                  className="max-h-28 sm:max-h-36 md:max-h-40 max-w-full object-contain transition-all duration-300"
-                />
-              </div>
+              <AutoPartnerLogo partner={p} variant="grid" />
             </div>
           ))}
         </div>

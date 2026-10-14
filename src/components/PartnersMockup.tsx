@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { PARTNER_LOGOS, logoSrc } from '../data/partnerLogos';
+import { PARTNER_LOGOS } from '../data/partnerLogos';
+import { AutoPartnerLogo } from './AutoPartnerLogo';
 
 interface PartnersMockupProps {
   onViewAll: () => void;
@@ -55,18 +56,13 @@ export const PartnersMockup: React.FC<PartnersMockupProps> = ({ onViewAll }) => 
           WebkitMaskImage: 'linear-gradient(to right, transparent, black 5%, black 95%, transparent)',
         }}
       >
-        <div className="bye-marquee-track items-center py-4">
+        <div className="bye-marquee-track items-center py-6">
           {loop.map((p, idx) => (
             <div
               key={idx}
-              className="shrink-0 mx-8 sm:mx-12 md:mx-16 flex items-center justify-center select-none group"
+              className="shrink-0 mx-7 sm:mx-12 md:mx-16 flex items-center justify-center select-none group h-28 sm:h-36 md:h-40"
             >
-              <img
-                src={logoSrc(p.file)}
-                alt={p.name}
-                draggable={false}
-                className="h-28 sm:h-36 md:h-44 w-auto max-w-[240px] sm:max-w-[320px] md:max-w-[380px] object-contain transition-transform duration-300 group-hover:scale-105"
-              />
+              <AutoPartnerLogo partner={p} variant="marquee" />
             </div>
           ))}
         </div>
