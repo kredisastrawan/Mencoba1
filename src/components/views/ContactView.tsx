@@ -163,6 +163,11 @@ export const ContactView: React.FC = () => {
     window.open(`https://wa.me/${cleanNum}?text=${text}`, '_blank');
   };
 
+  const openMetamorphWhatsApp = () => {
+    const text = encodeURIComponent('Halo Admin Metamorph Academy! Saya ingin bertanya mengenai program AI dan edukasi.');
+    window.open(`https://wa.me/628995299086?text=${text}`, '_blank');
+  };
+
   return (
     <div className="bg-slate-50 min-h-screen pb-20">
       {/* Header Banner */}
@@ -269,20 +274,31 @@ export const ContactView: React.FC = () => {
             </div>
 
             <div className="pt-4 border-t border-slate-100 space-y-2.5">
+              {/* WhatsApp Bali Youth Evolution */}
               <button
                 type="button"
                 onClick={openWhatsApp}
                 className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm transition-colors cursor-pointer shadow-xs"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>Chat WhatsApp: 0899-5299-086</span>
+                <span>WhatsApp BYE: +62 819-9784-1103</span>
+              </button>
+
+              {/* WhatsApp Metamorph Academy Admin */}
+              <button
+                type="button"
+                onClick={openMetamorphWhatsApp}
+                className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#0284c7] hover:bg-[#0369a1] text-white font-bold text-xs sm:text-sm transition-colors cursor-pointer shadow-xs"
+              >
+                <MessageCircle className="w-4 h-4" />
+                <span>WhatsApp Metamorph: 08995299086</span>
               </button>
 
               <a
                 href={COMPANY_INFO.aiCommunityUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-sky-50 hover:bg-sky-100 text-[#0284c7] border border-sky-200 font-bold text-xs sm:text-sm transition-colors shadow-xs"
+                className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 font-bold text-xs sm:text-sm transition-colors shadow-xs"
               >
                 <span>Gabung Komunitas AI WhatsApp</span>
               </a>

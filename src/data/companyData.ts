@@ -8,8 +8,10 @@ export const COMPANY_INFO = {
   email: "baliyouthevolution@gmail.com",
   instagram: "@baliyouthevolution",
   instagramUrl: "https://instagram.com/baliyouthevolution",
-  whatsappNumber: "+628995299086", // Official contact Hubungi Kami
-  whatsappDisplay: "+62 899-5299-086",
+  whatsappNumber: "+6281997841103", // Bali Youth Evolution Official
+  whatsappDisplay: "+62 819-9784-1103",
+  metamorphWhatsappNumber: "08995299086", // Admin Metamorph Academy
+  metamorphWhatsappDisplay: "08995299086",
   aiCommunityUrl: "https://chat.whatsapp.com/K8morh9Ylfo4UU4m3YXmtr",
   location: "Denpasar & Kuta, Bali, Indonesia",
   eventHighlight: "Mega-Event Agustus 2026",
