@@ -311,7 +311,7 @@ export const AiProgramCards: React.FC = () => {
               <span>Komunitas AI Terbuka</span>
             </div>
             <h4 className="text-xl sm:text-2xl font-bold tracking-tight text-white">
-              Bergabung Bersama Komunitas AI Metamorph Academy
+              Bergabung Bersama Komunitas AI Metamorph
             </h4>
             <p className="mt-2 text-xs sm:text-sm text-sky-200/90 leading-relaxed">
               Dapatkan update tools AI terbaru, diskusi implementasi praktis, undangan workshop eksklusif, dan jejaring penggiat kecerdasan buatan di Bali.

@@ -281,7 +281,7 @@ export const ContactView: React.FC = () => {
                 className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm transition-colors cursor-pointer shadow-xs"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>WhatsApp BYE: +62 819-9784-1103</span>
+                <span>WhatsApp BYE</span>
               </button>
 
               {/* WhatsApp Metamorph Academy Admin */}
@@ -291,7 +291,7 @@ export const ContactView: React.FC = () => {
                 className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#0284c7] hover:bg-[#0369a1] text-white font-bold text-xs sm:text-sm transition-colors cursor-pointer shadow-xs"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>WhatsApp Metamorph: 08995299086</span>
+                <span>WhatsApp Metamorph</span>
               </button>
 
               <a
@@ -300,7 +300,7 @@ export const ContactView: React.FC = () => {
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 font-bold text-xs sm:text-sm transition-colors shadow-xs"
               >
-                <span>Gabung Komunitas AI WhatsApp</span>
+                <span>Gabung Komunitas AI</span>
               </a>
             </div>
 
