@@ -20,10 +20,7 @@ export const MetamorphAcademyView: React.FC<MetamorphAcademyViewProps> = ({ onCo
     <div className="bg-slate-50 min-h-screen py-10 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Branding Section */}
-        <div className="bg-white rounded-3xl p-8 sm:p-12 lg:p-16 border border-slate-200/90 shadow-sm text-center relative overflow-hidden mb-12">
-          {/* Subtle Glow Backgrounds */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-sky-200/40 rounded-full blur-3xl pointer-events-none -mt-48" />
-
+        <div className="bg-white rounded-3xl p-8 sm:p-12 lg:p-16 border border-slate-200 shadow-sm text-center relative overflow-hidden mb-12">
           <div className="relative z-10 max-w-3xl mx-auto">
             {/* Metamorph Academy Logo */}
             <div className="flex justify-center mb-6">
@@ -34,9 +31,9 @@ export const MetamorphAcademyView: React.FC<MetamorphAcademyViewProps> = ({ onCo
               />
             </div>
 
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-50 text-[#0284c7] border border-sky-200 font-semibold text-xs uppercase tracking-wider mb-4">
-              <Sparkles className="w-3.5 h-3.5" />
-              AI Academy & Digital Acceleration
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0284c7] text-white font-bold text-xs uppercase tracking-wider mb-4 shadow-sm">
+              <Sparkles className="w-3.5 h-3.5 text-white" />
+              <span>AI Academy & Digital Acceleration</span>
             </div>
 
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">

@@ -82,6 +82,30 @@ Paragraf ketiga muncul setelah foto di atas.
 */
 const NEWS: NewsEntry[] = [
   {
+    slug: 'sayyidah-kezia-sman-1-anjatan-lolos-parlemen-remaja-dpr-ri-2026',
+    title: 'Akhiri Penantian 5 Tahun Indramayu, Siswi SMAN 1 Anjatan Lolos Seleksi Parlemen Remaja DPR RI 2026',
+    category: 'Pendidikan & Kepemudaan',
+    date: '2026-10-14',
+    author: 'Redaksi Prestamedia',
+    dateline: 'INDRAMAYU, PRESTAMEDIA',
+    excerpt: 'Menyisihkan belasan ribu pendaftar, Sayyidah Kezia Puji Lotaniawan dari SMAN 1 Anjatan sukses menjadi satu dari 200 pelajar terpilih yang mewakili daerahnya dalam Parlemen Remaja DPR RI 2026.',
+    cover: 'https://i.ibb.co.com/GQvbtggK/Screenshot-2026-10-14-at-18-24-08.png',
+    coverCaption: 'Kezia bersama ratusan delegasi Parlemen Remaja 2026 dari seluruh Indonesia berkumpul dalam agenda resmi pembukaan kegiatan.',
+    text: `
+Kabar membanggakan datang dari Kabupaten Indramayu. Setelah lima tahun tanpa perwakilan, wilayah ini akhirnya kembali mengirimkan delegasi terbaiknya ke ajang bergengsi tingkat nasional. Sayyidah Kezia Puji Lotaniawan, siswi kelas 10 dari SMA Negeri 1 Anjatan, berhasil lolos seleksi ketat program Parlemen Remaja DPR RI 2026.
+
+Pencapaian Kezia bukanlah sesuatu yang mudah diraih. Ia harus bersaing dalam proses seleksi yang sangat kompetitif, melibatkan 11.948 pelajar pendaftar dari seluruh pelosok Nusantara. Dari jumlah yang masif tersebut, panitia seleksi Sekretariat Jenderal DPR RI hanya memilih 200 pelajar terbaik untuk mengikuti simulasi dan pembelajaran politik secara langsung di Senayan.
+
+[foto: https://i.ibb.co.com/84gP7d7Z/IMG-20261001-WA0233-Kezia-Slebew.jpg | Sayyidah Kezia Puji Lotaniawan dengan mengenakan selempang Parlemen Remaja DPR RI 2026 perwakilan Jawa Barat saat berada di dalam Ruang Rapat Paripurna DPR RI.]
+
+Keberhasilan Kezia menembus Senayan memiliki makna historis tersendiri bagi daerah asalnya. Semenjak tahun 2021, Kabupaten Indramayu tidak pernah memiliki satu pun pelajar yang berhasil melaju ke tahap nasional Parlemen Remaja. Dengan pencapaian ini, Kezia mencatatkan namanya sebagai orang kedua dari Indramayu yang mampu menembus ketatnya seleksi program tahunan dari DPR RI tersebut.
+
+Melalui program Parlemen Remaja ini, para delegasi terpilih akan mendapatkan pengalaman langsung mengenai proses pembuatan kebijakan publik, tata cara persidangan, serta fungsi pengawasan yang dijalankan oleh lembaga legislatif. 
+
+Capaian gemilang yang diraih Sayyidah Kezia Puji Lotaniawan tidak hanya mengharumkan nama SMA Negeri 1 Anjatan, tetapi juga menjadi kebanggaan tersendiri bagi masyarakat Kabupaten Indramayu, sekaligus membuktikan bahwa generasi muda di daerah tersebut memiliki kualitas dan kapasitas untuk bersaing di tingkat nasional.
+`,
+  },
+  {
     slug: 'dyah-liaidhil-fitri-sman-2-malang-first-runner-up-puteri-jawa-timur-2026',
     title: 'Membawa Misi FindYourFi, Dyah Li’aidhil Fitri Raih Gelar First Runner-Up Puteri Jawa Timur 2026',
     category: 'Prestasi & Pariwisata',

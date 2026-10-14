@@ -97,9 +97,9 @@ export const AiProgramCards: React.FC = () => {
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
         <div>
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-100 text-[#0284c7] font-semibold text-xs tracking-wide uppercase mb-3">
-            <Sparkles className="w-3.5 h-3.5 text-[#0284c7]" />
-            Program Unggulan AI Metamorph Academy
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0284c7] text-white font-bold text-xs tracking-wider uppercase mb-3 shadow-sm">
+            <Sparkles className="w-3.5 h-3.5 text-white" />
+            <span>Program Unggulan AI Metamorph Academy</span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
             Katalog Program Kecerdasan Buatan (AI)
@@ -205,8 +205,8 @@ export const AiProgramCards: React.FC = () => {
               <div
                 className={`h-2.5 w-full ${
                   isBelajar
-                    ? 'bg-gradient-to-r from-sky-400 via-[#0284c7] to-cyan-500'
-                    : 'bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500'
+                    ? 'bg-[#0284c7]'
+                    : 'bg-indigo-600'
                 }`}
               />
 
@@ -218,10 +218,10 @@ export const AiProgramCards: React.FC = () => {
                       #{p.no < 10 ? `0${p.no}` : p.no}
                     </span>
                     <span
-                      className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold ${
+                      className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold text-white shadow-xs ${
                         isBelajar
-                          ? 'bg-sky-50 text-[#0284c7] border border-sky-200/60'
-                          : 'bg-indigo-50 text-indigo-700 border border-indigo-200/60'
+                          ? 'bg-[#0284c7]'
+                          : 'bg-indigo-600'
                       }`}
                     >
                       {isBelajar ? (
@@ -303,13 +303,12 @@ export const AiProgramCards: React.FC = () => {
       </div>
 
       {/* Community Call-out Box */}
-      <div className="mt-10 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-slate-900 via-sky-950 to-slate-900 text-white shadow-lg relative overflow-hidden">
-        <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-sky-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="mt-10 p-6 sm:p-8 rounded-3xl bg-slate-900 text-white shadow-lg relative overflow-hidden">
         <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="max-w-xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold mb-3 border border-emerald-500/30">
-              <Users2 className="w-3.5 h-3.5" />
-              Komunitas AI Terbuka
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-600 text-white text-xs font-bold mb-3 shadow-sm">
+              <Users2 className="w-3.5 h-3.5 text-white" />
+              <span>Komunitas AI Terbuka</span>
             </div>
             <h4 className="text-xl sm:text-2xl font-bold tracking-tight text-white">
               Bergabung Bersama Komunitas AI Metamorph Academy
@@ -324,7 +323,7 @@ export const AiProgramCards: React.FC = () => {
               href={AI_COMMUNITY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-95 text-center"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-95 text-center"
             >
               <MessageCircle className="w-4 h-4" />
               <span>Gabung Komunitas AI</span>
@@ -333,7 +332,7 @@ export const AiProgramCards: React.FC = () => {
               href={`https://wa.me/${WHATSAPP_CONTACT}?text=${encodeURIComponent('Halo Metamorph Academy, saya ingin bertanya lebih lanjut mengenai program AI.')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold text-xs sm:text-sm transition-all active:scale-95 text-center"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-bold text-xs sm:text-sm transition-all active:scale-95 text-center"
             >
               <span>Hubungi Admin</span>
             </a>
