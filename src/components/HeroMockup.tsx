@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { ArrowRight, GraduationCap, BookOpen, Users, TrendingUp } from 'lucide-react';
-import { PaperPlaneVector } from './PaperPlaneVector';
+import { AnimatedPaperPlaneHero } from './AnimatedPaperPlaneHero';
 
 interface HeroMockupProps {
   onExplorePrograms: () => void;
@@ -13,6 +13,10 @@ export const HeroMockup: React.FC<HeroMockupProps> = ({
   onJoinBye,
   onSelectAudience,
 }) => {
+  const heroContainerRef = useRef<HTMLElement | null>(null);
+  const heroTitleRef = useRef<HTMLHeadingElement | null>(null);
+  const heroCardRef = useRef<HTMLDivElement | null>(null);
+
   const audienceSegments = [
     {
       title: 'Pelajar',
@@ -37,11 +41,16 @@ export const HeroMockup: React.FC<HeroMockupProps> = ({
   ];
 
   return (
-    <section className="relative bg-gradient-to-b from-[#0284c7] via-[#0284c7] to-[#38bdf8] text-white overflow-hidden pt-10 sm:pt-14 pb-12 sm:pb-16">
-      {/* Top Paper Airplane soaring */}
-      <div className="absolute top-12 left-1/2 transform -translate-x-1/2 pointer-events-none hidden md:block">
-        <PaperPlaneVector className="w-16 h-16 text-white" withTrajectory={true} />
-      </div>
+    <section
+      ref={heroContainerRef}
+      className="relative bg-gradient-to-b from-[#0284c7] via-[#0284c7] to-[#38bdf8] text-white overflow-hidden pt-10 sm:pt-14 pb-12 sm:pb-16"
+    >
+      {/* Animated Paper Plane across Hero */}
+      <AnimatedPaperPlaneHero
+        heroRef={heroContainerRef}
+        titleRef={heroTitleRef}
+        cardRef={heroCardRef}
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -53,7 +62,10 @@ export const HeroMockup: React.FC<HeroMockupProps> = ({
             </div>
 
             {/* Giant Title */}
-            <h1 className="text-4xl sm:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.08] text-white">
+            <h1
+              ref={heroTitleRef}
+              className="text-4xl sm:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.08] text-white"
+            >
               Bali Youth <br />
               Evolution
             </h1>
@@ -85,7 +97,7 @@ export const HeroMockup: React.FC<HeroMockupProps> = ({
           </div>
 
           {/* Right Column: Hero Photo & Handwriting Tag */}
-          <div className="lg:col-span-5 relative">
+          <div className="lg:col-span-5 relative" ref={heroCardRef}>
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 aspect-[4/3] sm:aspect-[16/11] bg-sky-900">
               <img
                 src="/hero-bye.webp"
