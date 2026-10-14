@@ -5,7 +5,7 @@ export interface PartnerLogo {
 }
 
 export const PARTNER_LOGOS: PartnerLogo[] = [
-  { name: 'Metamorph Academy', file: 'https://i.ibb.co.com/Hp4vL2S9/mtp-log.png' },
+  { name: 'Metamorph Academy', file: 'https://i.ibb.co.com/4ww5ndK1/mmtp-lof.png' },
   { name: 'Bim University', file: 'Bim.png' },
   { name: 'HIMA Bisnis Digital', file: 'Hima.png' },
   { name: 'AE Group', file: 'Logo AE group.png' },

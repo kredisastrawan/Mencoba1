@@ -22,7 +22,7 @@ import { EcosystemView } from './components/views/EcosystemView';
 import { PortfolioView } from './components/views/PortfolioView';
 import { ContactView } from './components/views/ContactView';
 import { PartnershipView } from './components/views/PartnershipView';
-import { BecView } from './components/views/BecView';
+import { MetamorphAcademyView } from './components/views/MetamorphAcademyView';
 import { PrestamediaView } from './components/views/PrestamediaView';
 import { findNewsBySlug, getFriendlySlug } from './data/prestamediaNews';
 
@@ -34,7 +34,7 @@ const parsePath = (pathname: string): { page: ActivePage; articleSlug: string | 
 
   if (!clean || clean === '') return { page: 'home', articleSlug: null };
   if (clean === '/about') return { page: 'about', articleSlug: null };
-  if (clean === '/bec') return { page: 'bec', articleSlug: null };
+  if (clean === '/metamorph-academy' || clean === '/bec') return { page: 'metamorph-academy', articleSlug: null };
   if (clean === '/contact') return { page: 'contact', articleSlug: null };
   if (clean === '/programs') return { page: 'programs', articleSlug: null };
   if (clean === '/ecosystem') return { page: 'ecosystem', articleSlug: null };
@@ -72,7 +72,7 @@ export default function App() {
 
     let targetUrl = '/';
     if (page === 'about') targetUrl = '/about';
-    else if (page === 'bec') targetUrl = '/bec';
+    else if (page === 'metamorph-academy' || (page as string) === 'bec') targetUrl = '/metamorph-academy';
     else if (page === 'contact') targetUrl = '/contact';
     else if (page === 'programs') targetUrl = '/programs';
     else if (page === 'ecosystem') targetUrl = '/ecosystem';
@@ -104,7 +104,7 @@ export default function App() {
       }
     } else if (page === 'about') {
       document.title = 'About - Bali Youth Evolution';
-    } else if (page === 'bec') {
+    } else if (page === 'metamorph-academy' || (page as string) === 'bec') {
       document.title = 'Metamorph Academy - Bali Youth Evolution';
     } else if (page === 'prestamedia') {
       document.title = 'Prestamedia - Publikasi Media Prestasi | Bali Youth Evolution';
@@ -262,9 +262,9 @@ export default function App() {
         )}
 
         {/* Metamorph Academy (Pembaruan Branding dari BEC) */}
-        {activePage === 'bec' && (
+        {(activePage === 'metamorph-academy' || (activePage as string) === 'bec') && (
           <div className="animate-in fade-in duration-300">
-            <BecView onContact={() => handleNavigate('contact')} />
+            <MetamorphAcademyView onContact={() => handleNavigate('contact')} />
           </div>
         )}
 

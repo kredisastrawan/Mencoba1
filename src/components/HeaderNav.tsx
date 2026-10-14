@@ -10,6 +10,7 @@ export type ActivePage =
   | 'ecosystem'
   | 'portfolio'
   | 'partnership'
+  | 'metamorph-academy'
   | 'bec'
   | 'prestamedia'
   | 'contact';
@@ -46,7 +47,7 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
   const navItems: { id: ActivePage; label: string; path: string }[] = [
     { id: 'home', label: 'Home', path: '/' },
     { id: 'about', label: 'About', path: '/about' },
-    { id: 'bec', label: 'Metamorph Academy', path: '/bec' },
+    { id: 'metamorph-academy', label: 'Metamorph Academy', path: '/metamorph-academy' },
     { id: 'prestamedia', label: 'Prestamedia', path: '/prestamedia' },
     { id: 'contact', label: 'Contact', path: '/contact' },
   ];
@@ -85,7 +86,9 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex items-center gap-5 lg:gap-8 text-sm font-semibold">
           {navItems.map((item) => {
-            const isActive = activePage === item.id;
+            const isActive =
+              activePage === item.id ||
+              (item.id === 'metamorph-academy' && (activePage as string) === 'bec');
             return (
               <a
                 key={item.id}
@@ -142,7 +145,7 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
                 setMobileMenuOpen(false);
               }}
               className={`w-full block text-left px-3 py-2.5 rounded-lg text-sm font-semibold transition-colors ${
-                activePage === item.id
+                activePage === item.id || (item.id === 'metamorph-academy' && (activePage as string) === 'bec')
                   ? 'bg-sky-50 text-[#0369a1]'
                   : 'text-[#0284c7] hover:bg-sky-50 hover:text-[#0369a1]'
               }`}

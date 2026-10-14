@@ -6,11 +6,11 @@ const METAMORPH_LOGO_URL = 'https://i.ibb.co.com/4ww5ndK1/mmtp-lof.png';
 const METAMORPH_WHATSAPP = '628995299086';
 const AI_COMMUNITY_URL = 'https://chat.whatsapp.com/K8morh9Ylfo4UU4m3YXmtr';
 
-interface BecViewProps {
+export interface MetamorphAcademyViewProps {
   onContact: () => void;
 }
 
-export const BecView: React.FC<BecViewProps> = ({ onContact }) => {
+export const MetamorphAcademyView: React.FC<MetamorphAcademyViewProps> = ({ onContact }) => {
   const openWhatsApp = () => {
     const text = 'Halo Metamorph Academy, saya ingin berkonsultasi mengenai program edukasi AI dan kolaborasi.';
     window.open(`https://wa.me/${METAMORPH_WHATSAPP}?text=${encodeURIComponent(text)}`, '_blank');
@@ -103,3 +103,5 @@ export const BecView: React.FC<BecViewProps> = ({ onContact }) => {
     </div>
   );
 };
+
+export const BecView = MetamorphAcademyView;
