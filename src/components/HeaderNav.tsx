@@ -46,7 +46,7 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({
   const navItems: { id: ActivePage; label: string; path: string }[] = [
     { id: 'home', label: 'Home', path: '/' },
     { id: 'about', label: 'About', path: '/about' },
-    { id: 'bec', label: 'BEC', path: '/bec' },
+    { id: 'bec', label: 'Metamorph Academy', path: '/bec' },
     { id: 'prestamedia', label: 'Prestamedia', path: '/prestamedia' },
     { id: 'contact', label: 'Contact', path: '/contact' },
   ];

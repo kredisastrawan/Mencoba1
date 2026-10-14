@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Check, Users, Award, Calendar } from 'lucide-react';
 import { CORE_PROGRAMS } from '../../data/companyData';
+import { AiProgramCards } from '../AiProgramCards';
 
 interface ProgramsViewProps {
   onJoinProgram: (programTitle: string) => void;
@@ -126,6 +127,11 @@ export const ProgramsView: React.FC<ProgramsViewProps> = ({ onJoinProgram }) => 
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Swipeable AI Programs Section from Metamorph Academy */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-10 border-t border-slate-200">
+        <AiProgramCards />
       </div>
     </div>
   );

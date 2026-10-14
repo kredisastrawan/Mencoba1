@@ -40,7 +40,7 @@ export const FooterMockup: React.FC<FooterMockupProps> = ({ onNavigate }) => {
             <a href="/ecosystem" onClick={(e) => { e.preventDefault(); onNavigate('ecosystem'); }} className="hover:text-white transition-colors cursor-pointer">Ecosystem</a>
             <a href="/portfolio" onClick={(e) => { e.preventDefault(); onNavigate('portfolio'); }} className="hover:text-white transition-colors cursor-pointer">Portfolio</a>
             <a href="/partnership" onClick={(e) => { e.preventDefault(); onNavigate('partnership'); }} className="hover:text-white transition-colors cursor-pointer">Telah Berkolaborasi Dengan</a>
-            <a href="/bec" onClick={(e) => { e.preventDefault(); onNavigate('bec'); }} className="hover:text-white transition-colors cursor-pointer">BEC</a>
+            <a href="/bec" onClick={(e) => { e.preventDefault(); onNavigate('bec'); }} className="hover:text-white transition-colors cursor-pointer">Metamorph Academy</a>
             <a href="/prestamedia" onClick={(e) => { e.preventDefault(); onNavigate('prestamedia'); }} className="hover:text-white transition-colors cursor-pointer">Prestamedia</a>
             <a href="/contact" onClick={(e) => { e.preventDefault(); onNavigate('contact'); }} className="hover:text-white transition-colors cursor-pointer">Contact</a>
           </div>

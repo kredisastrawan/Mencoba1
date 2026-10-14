@@ -268,15 +268,24 @@ export const ContactView: React.FC = () => {
               </p>
             </div>
 
-            <div className="pt-4 border-t border-slate-100">
+            <div className="pt-4 border-t border-slate-100 space-y-2.5">
               <button
                 type="button"
                 onClick={openWhatsApp}
                 className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm transition-colors cursor-pointer shadow-xs"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>Chat Langsung via WhatsApp</span>
+                <span>Chat WhatsApp: 0899-5299-086</span>
               </button>
+
+              <a
+                href={COMPANY_INFO.aiCommunityUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-sky-50 hover:bg-sky-100 text-[#0284c7] border border-sky-200 font-bold text-xs sm:text-sm transition-colors shadow-xs"
+              >
+                <span>Gabung Komunitas AI WhatsApp</span>
+              </a>
             </div>
 
             <div className="pt-2 text-center">

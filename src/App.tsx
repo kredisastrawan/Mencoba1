@@ -105,7 +105,7 @@ export default function App() {
     } else if (page === 'about') {
       document.title = 'About - Bali Youth Evolution';
     } else if (page === 'bec') {
-      document.title = 'Bali Entrepreneur Circle (BEC) - Bali Youth Evolution';
+      document.title = 'Metamorph Academy - Bali Youth Evolution';
     } else if (page === 'prestamedia') {
       document.title = 'Prestamedia - Publikasi Media Prestasi | Bali Youth Evolution';
     } else if (page === 'contact') {
@@ -261,7 +261,7 @@ export default function App() {
           </div>
         )}
 
-        {/* BEC: Bali Entrepreneur Circle */}
+        {/* Metamorph Academy (Pembaruan Branding dari BEC) */}
         {activePage === 'bec' && (
           <div className="animate-in fade-in duration-300">
             <BecView onContact={() => handleNavigate('contact')} />
