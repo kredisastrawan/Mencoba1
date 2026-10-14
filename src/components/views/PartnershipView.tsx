@@ -15,11 +15,11 @@ export const PartnershipView: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-10 items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-8 items-center">
           {PARTNER_LOGOS.map((p, idx) => (
             <div
               key={idx}
-              className="w-full h-32 sm:h-36 md:h-44 flex items-center justify-center p-3 group transition-transform duration-300 hover:scale-105"
+              className="w-full h-24 sm:h-32 md:h-40 flex items-center justify-center p-2.5 sm:p-4 group transition-transform duration-300 hover:scale-105"
             >
               <AutoPartnerLogo partner={p} variant="grid" />
             </div>

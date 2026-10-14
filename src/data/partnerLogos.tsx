@@ -6,7 +6,7 @@ export interface PartnerLogo {
 }
 
 export const PARTNER_LOGOS: PartnerLogo[] = [
-  { name: 'Metamorph Academy', file: 'https://i.ibb.co.com/Hp4vL2S9/mtp-log.png', scale: 2.6 },
+  { name: 'Metamorph Academy', file: 'https://i.ibb.co.com/Hp4vL2S9/mtp-log.png' },
   { name: 'Bim University', file: 'Bim.png' },
   { name: 'HIMA Bisnis Digital', file: 'Hima.png' },
   { name: 'AE Group', file: 'Logo AE group.png' },
@@ -27,8 +27,8 @@ export const PARTNER_LOGOS: PartnerLogo[] = [
   { name: 'PM', file: 'Pm.png' },
   { name: 'BKRAF', file: 'BKRAF.png' },
   { name: 'BJ', file: 'BJ.png' },
-  { name: 'DISDIKPORA PROV BALI', file: 'https://i.ibb.co.com/67Dx9Lzn/Disdikpora.png', scale: 2.2 },
-  { name: 'GSA', file: 'https://i.ibb.co.com/Q7LPkCSk/gsa.png', scale: 2.2 },
+  { name: 'DISDIKPORA PROV BALI', file: 'https://i.ibb.co.com/67Dx9Lzn/Disdikpora.png' },
+  { name: 'GSA', file: 'https://i.ibb.co.com/Q7LPkCSk/gsa.png' },
 ];
 
 // Otomatis support link URL https:// atau file lokal di folder public

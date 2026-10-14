@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { PartnerLogo, logoSrc } from '../data/partnerLogos';
 
-// Global cache in memory so trimming only computes once per URL/file
+// Global memory cache so trimming and aspect ratio calculations only compute once per session
 const trimmedCache = new Map<string, { src: string; aspect: number; wasTrimmed: boolean }>();
 
 interface AutoPartnerLogoProps {
@@ -36,8 +36,8 @@ export const AutoPartnerLogo: React.FC<AutoPartnerLogoProps> = ({
         const naturalW = img.naturalWidth || img.width || 300;
         const naturalH = img.naturalHeight || img.height || 100;
 
-        // Downscale for instant pixel scanning (max 800px)
-        const scaleFactor = Math.min(1, 800 / Math.max(naturalW, naturalH));
+        // Downscale for fast pixel scanning (max 600px)
+        const scaleFactor = Math.min(1, 600 / Math.max(naturalW, naturalH));
         const scanW = Math.max(10, Math.round(naturalW * scaleFactor));
         const scanH = Math.max(10, Math.round(naturalH * scaleFactor));
 
@@ -73,12 +73,12 @@ export const AutoPartnerLogo: React.FC<AutoPartnerLogoProps> = ({
           }
         }
 
-        // Check if there is significant transparent padding (> 4% on any side)
+        // Check if there is significant transparent padding (> 3% on any side)
         const hasExcessPadding =
-          minX / scanW > 0.04 ||
-          (scanW - 1 - maxX) / scanW > 0.04 ||
-          minY / scanH > 0.04 ||
-          (scanH - 1 - maxY) / scanH > 0.04;
+          minX / scanW > 0.03 ||
+          (scanW - 1 - maxX) / scanW > 0.03 ||
+          minY / scanH > 0.03 ||
+          (scanH - 1 - maxY) / scanH > 0.03;
 
         if (hasContent && hasExcessPadding && maxX > minX && maxY > minY) {
           // Crop tight with 1% margin
@@ -121,9 +121,8 @@ export const AutoPartnerLogo: React.FC<AutoPartnerLogoProps> = ({
 
     // Strategy 1 for external links: fetch blob with CORS to guarantee untainted canvas
     if (isExternalLink) {
-      // Use cache-busting to bypass browser's opaque image cache
-      const corsUrl = rawSrc.includes('?') ? `${rawSrc}&c=1` : `${rawSrc}?c=1`;
-      fetch(corsUrl, { mode: 'cors' })
+      // First try fetching the URL as blob with CORS
+      fetch(rawSrc, { mode: 'cors' })
         .then((r) => {
           if (!r.ok) throw new Error('Fetch failed');
           return r.blob();
@@ -133,7 +132,7 @@ export const AutoPartnerLogo: React.FC<AutoPartnerLogoProps> = ({
           const img = new Image();
           img.onload = () => {
             processImageElement(img);
-            URL.revokeObjectURL(blobUrl);
+            setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
           };
           img.onerror = () => {
             URL.revokeObjectURL(blobUrl);
@@ -166,58 +165,63 @@ export const AutoPartnerLogo: React.FC<AutoPartnerLogoProps> = ({
   }, [rawSrc, isExternalLink]);
 
   // Optical Size Balance Engine
+  // Aspect ratio of the trimmed logo (or fallback)
   const aspect = data.aspect || 2;
 
-  // SIZING SYSTEM FOR LINK-BASED AND LOCAL LOGOS:
-  // If user provided a specific scale in partnerLogos.tsx, use it.
-  // If it's an external link and hasn't been trimmed yet, apply auto-compensation (2.2x)
-  // so that uncropped Canva square artboards never look tiny!
-  let effectiveScale = partner.scale ?? 1;
-  if (!partner.scale && isExternalLink && !data.wasTrimmed) {
-    // Automatic Link Safety Scaling:
-    // If it's a square/nearly square artboard (typical Canva export), boost by 2.2x
-    effectiveScale = aspect < 1.4 ? 2.2 : 1.8;
-  }
-
-  // LARGER BASE SIZES (as requested: "besarkan lagi logonya")
+  // SIZING SYSTEM DESIGNED FOR ROCK-SOLID MOBILE & DESKTOP STABILITY:
+  // We NEVER apply raw CSS `transform: scale(...)` without layout constraints,
+  // because on mobile CSS transform breaks flexbox and grid boxes, causing
+  // link logos to bleed and overlap adjacent logos.
+  // Instead, sizes are controlled via explicit, responsive CSS dimensions!
   let sizeClasses = '';
+
   if (variant === 'marquee') {
-    if (aspect >= 3.0) {
-      // Wide wordmark (e.g. Metamorph, HIMA, Bim University)
-      sizeClasses = 'h-14 sm:h-18 md:h-22 w-auto max-w-[280px] sm:max-w-[340px] md:max-w-[420px]';
-    } else if (aspect >= 1.5) {
-      // Standard rectangular logo
-      sizeClasses = 'h-16 sm:h-20 md:h-24 w-auto max-w-[220px] sm:max-w-[280px] md:max-w-[340px]';
+    if (aspect >= 2.4) {
+      // Wide wordmark (e.g. Metamorph Academy ~3.2, HIMA ~3.5, Bim University ~3.0)
+      // Mobile: 36px height (h-9) -> ~115px width (comfortably within max-w-[145px])
+      // Tablet/Desktop: 48px - 56px height -> ~160px - 180px width
+      sizeClasses = 'h-9 sm:h-12 md:h-14 w-auto max-w-[145px] sm:max-w-[210px] md:max-w-[260px]';
+    } else if (aspect >= 1.4) {
+      // Standard rectangular logo (e.g. Lippo Mall, Level 21, Chemi, Sangguru)
+      // Mobile: 40px height (h-10) -> ~75px width
+      // Desktop: 52px - 60px height
+      sizeClasses = 'h-10 sm:h-13 md:h-15 w-auto max-w-[120px] sm:max-w-[175px] md:max-w-[210px]';
     } else if (aspect >= 0.85) {
-      // Square / round emblem / crest (e.g. Disdikpora, Tenang Jiwa, AE Group)
-      sizeClasses = 'h-18 sm:h-22 md:h-26 w-auto max-w-[180px] sm:max-w-[220px]';
+      // Square / round emblem / crest (e.g. Disdikpora ~1.0, GSA ~1.0, BDI ~1.0, BKRAF)
+      // Mobile: 48px height (h-12) & 48px width -> perfectly balances optical mass with wide wordmarks!
+      // Desktop: 60px - 72px height
+      sizeClasses = 'h-12 sm:h-15 md:h-18 w-auto max-w-[52px] sm:max-w-[72px] md:max-w-[88px]';
     } else {
-      // Tall vertical logo
-      sizeClasses = 'h-20 sm:h-24 md:h-28 w-auto max-w-[150px] sm:max-w-[180px]';
+      // Tall vertical logo (e.g. Tenang Jiwa / BJ ~0.7)
+      sizeClasses = 'h-13 sm:h-17 md:h-20 w-auto max-w-[44px] sm:max-w-[60px] md:max-w-[75px]';
     }
   } else {
-    // Grid variant (PartnershipView)
-    if (aspect >= 3.0) {
-      sizeClasses = 'h-14 sm:h-16 md:h-18 w-auto max-w-[96%]';
-    } else if (aspect >= 1.5) {
-      sizeClasses = 'h-16 sm:h-18 md:h-22 w-auto max-w-[92%]';
+    // Grid variant (PartnershipView) - perfectly contained within mobile 2-col cells
+    if (aspect >= 2.4) {
+      sizeClasses = 'h-8 sm:h-11 md:h-13 w-auto max-w-[88%]';
+    } else if (aspect >= 1.4) {
+      sizeClasses = 'h-9 sm:h-12 md:h-14 w-auto max-w-[82%]';
     } else if (aspect >= 0.85) {
-      sizeClasses = 'h-18 sm:h-22 md:h-24 w-auto max-w-[85%]';
+      sizeClasses = 'h-11 sm:h-14 md:h-17 w-auto max-w-[70%]';
     } else {
-      sizeClasses = 'h-20 sm:h-24 md:h-26 w-auto max-w-[75%]';
+      sizeClasses = 'h-12 sm:h-16 md:h-19 w-auto max-w-[60%]';
     }
   }
+
+  // Handle optional fine-tuning scale if provided in partnerLogos.tsx (clamped to prevent mobile blowup)
+  const safeScale = partner.scale ? Math.min(1.3, Math.max(0.7, partner.scale)) : 1;
 
   return (
     <div
-      className={`inline-flex items-center justify-center transition-transform duration-300 group-hover:scale-105 ${className}`}
-      style={effectiveScale !== 1 ? { transform: `scale(${effectiveScale})` } : undefined}
+      className={`inline-flex items-center justify-center transition-transform duration-300 group-hover:scale-105 shrink-0 ${className}`}
+      style={safeScale !== 1 ? { transform: `scale(${safeScale})` } : undefined}
     >
       <img
         src={data.src}
         alt={partner.name}
+        loading="lazy"
         draggable={false}
-        className={`${sizeClasses} object-contain transition-all duration-300`}
+        className={`${sizeClasses} object-contain transition-all duration-300 block select-none`}
       />
     </div>
   );

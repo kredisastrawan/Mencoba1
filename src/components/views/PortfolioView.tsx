@@ -53,11 +53,11 @@ export const PortfolioView: React.FC = () => {
               WebkitMaskImage: 'linear-gradient(to right, transparent, black 5%, black 95%, transparent)',
             }}
           >
-            <div className="bye-portfolio-track items-center py-4">
+            <div className="bye-portfolio-track items-center py-3 sm:py-4">
               {[...PARTNER_LOGOS, ...PARTNER_LOGOS].map((p, idx) => (
                 <div
                   key={idx}
-                  className="shrink-0 mx-7 sm:mx-12 md:mx-16 flex items-center justify-center select-none group h-28 sm:h-36 md:h-40"
+                  className="shrink-0 mx-5 sm:mx-10 md:mx-14 flex items-center justify-center select-none group h-16 sm:h-22 md:h-28"
                 >
                   <AutoPartnerLogo partner={p} variant="marquee" />
                 </div>
