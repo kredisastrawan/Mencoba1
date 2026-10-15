@@ -82,6 +82,30 @@ Paragraf ketiga muncul setelah foto di atas.
 */
 const NEWS: NewsEntry[] = [
   {
+    slug: 'ridwan-unsulbar-dua-penghargaan-pemilihan-putera-puteri-sulawesi-barat-2026',
+    title: 'Ridwan, Mahasiswa Universitas Sulawesi Barat Raih Dua Penghargaan di Pemilihan Putera Puteri Sulawesi Barat 2026',
+    category: 'Prestasi & Pariwisata',
+    date: '2026-10-15',
+    author: 'Redaksi Prestamedia',
+    dateline: 'MAMUJU, PRESTAMEDIA',
+    excerpt: 'Mahasiswa Universitas Sulawesi Barat, Ridwan, berhasil menembus jajaran Top 6 sekaligus meraih predikat Best Advokasi dan Best Media Sosial dalam ajang Pemilihan Putera Puteri Sulawesi Barat 2026.',
+    cover: 'https://i.ibb.co.com/JF75LDg2/Screenshot-2026-10-15-at-17-10-25.png',
+    coverCaption: 'Ridwan saat tampil mengenakan selempang finalis di atas panggung Pemilihan Putera Puteri Sulawesi Barat 2026[cite: 19].',
+    text: `
+Mahasiswa Universitas Sulawesi Barat, Ridwan, mencatatkan prestasi membanggakan dalam ajang Pemilihan Putera Puteri Sulawesi Barat 2026. Kompetisi tingkat provinsi tersebut diselenggarakan di Gedung Graha Sandeq, kompleks Kantor PKK Provinsi Sulawesi Barat, Kota Mamuju.
+
+Dalam ajang yang mempertemukan putra-putri daerah terbaik tersebut, Ridwan berhasil menunjukkan kapasitas dan potensi unggulnya. Konsistensi penampilan dan wawasannya sukses mengantarkan perwakilan Universitas Sulawesi Barat ini masuk ke dalam jajaran Top 6 Putera Sulawesi Barat 2026[cite: 19].
+
+[foto: https://i.ibb.co.com/vCXmmR1m/Screenshot-2026-10-15-at-17-10-44.png | Ridwan (kiri) memperlihatkan piala penghargaan yang berhasil diraihnya bersama rekan sesama finalis[cite: 20].]
+
+Dedikasi Ridwan selama masa pemilihan turut membuahkan hasil yang memuaskan. Ia berhasil meraih dua penghargaan khusus sekaligus, yakni sebagai Best Advokasi Putera dan Best Media Sosial Putera Sulawesi Barat 2026[cite: 20].
+
+Pencapaian sebagai Best Advokasi membuktikan bahwa gagasan serta kampanye sosial yang diusung oleh Ridwan dinilai relevan dan berbobot oleh dewan juri. Sementara itu, gelar Best Media Sosial menunjukkan kemampuannya dalam memanfaatkan platform digital secara positif dan edukatif untuk berkomunikasi dengan masyarakat luas.
+
+Prestasi ganda yang diraih Ridwan ini tidak hanya menjadi kebanggaan pribadi, tetapi juga turut mengharumkan nama Universitas Sulawesi Barat. Pengalaman ini diharapkan dapat menjadi motivasi bagi generasi muda untuk terus berkarya, mengasah potensi diri, dan memberikan kontribusi nyata bagi pembangunan daerah di Sulawesi Barat.
+`,
+  },
+  {
     slug: 'muhammad-zahir-ali-santri-bin-baz-yogyakarta-parlemen-remaja-2026',
     title: 'Mengubah Mimpi Menjadi Nyata: Kisah Muhammad Zahir Ali, Santri yang Melangkah ke Parlemen Remaja 2026',
     category: 'Pendidikan & Kepemudaan',
