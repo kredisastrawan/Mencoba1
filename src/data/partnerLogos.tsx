@@ -33,6 +33,7 @@ export const HOME_MARQUEE_LOGOS: PartnerLogo[] = [
   { name: 'KuCetakIn', file: 'Kucetakin.png', row: 'atas' },
   { name: 'Balai Diklat Industri Denpasar', file: 'BDI.png', row: 'atas' },
   { name: 'Disdikpora Kota Denpasar', file: 'Disdikpora DPS.png', row: 'atas' },
+  { name: 'GSA', file: 'https://i.ibb.co.com/Q7LPkCSk/gsa.png', row: 'bawah' },
 
   // --- BARIS BAWAH (DISPLAY BAWAH) ---
   { name: 'HIPMI Kota Denpasar', file: 'HIPMI.png', row: 'bawah' },
@@ -45,7 +46,7 @@ export const HOME_MARQUEE_LOGOS: PartnerLogo[] = [
   { name: 'BKRAF', file: 'BKRAF.png', row: 'bawah' },
   { name: 'BJ', file: 'BJ.png', row: 'bawah' },
   { name: 'DISDIKPORA PROV BALI', file: 'https://i.ibb.co.com/67Dx9Lzn/Disdikpora.png', row: 'bawah' },
-  { name: 'GSA', file: 'https://i.ibb.co.com/Q7LPkCSk/gsa.png', row: 'bawah' },
+  { name: 'PJ', file: 'https://i.ibb.co.com/67thCpbN/pj.png', row: 'bawah' },
 ];
 
 /* ==========================================================================================
@@ -88,6 +89,7 @@ export const PARTNERSHIP_PAGE_LOGOS: PartnerLogo[] = [
   { name: 'BJ', file: 'BJ.png', scale: 1.2 },
   { name: 'DISDIKPORA PROV BALI', file: 'https://i.ibb.co.com/67Dx9Lzn/Disdikpora.png', scale: 1.15 },
   { name: 'GSA', file: 'https://i.ibb.co.com/Q7LPkCSk/gsa.png', scale: 1.15 },
+  { name: 'PJ', file: 'https://i.ibb.co.com/67thCpbN/pj.png', scale: 1.35 },
 ];
 
 // Alias default untuk kompatibilitas ke belakang
