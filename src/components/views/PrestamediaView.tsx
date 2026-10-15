@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowLeft, ArrowRight, Newspaper, Award, ExternalLink } from 'lucide-react';
 import { PRESTAMEDIA_NEWS, NewsItem, newsImg, findNewsBySlug, getFriendlySlug } from '../../data/prestamediaNews';
+import { PrestamediaShareStats } from '../PrestamediaShareStats';
 
 const formatDate = (iso: string) =>
   new Date(iso + 'T00:00:00').toLocaleDateString('id-ID', {
@@ -96,7 +97,15 @@ const ArticleDetail: React.FC<{
           {item.author} · {formatDate(item.date)}
         </div>
 
-        <figure className="mt-8">
+        {/* Statistik Shares, Views & Tombol Bagikan ke Media Sosial */}
+        <PrestamediaShareStats
+          articleId={item.slug}
+          slug={item.slug}
+          title={item.title}
+          cover={newsImg(item.cover)}
+        />
+
+        <figure className="mt-6">
           <img
             src={newsImg(item.cover)}
             alt={item.coverCaption}
