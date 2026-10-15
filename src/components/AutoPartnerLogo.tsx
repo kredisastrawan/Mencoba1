@@ -178,38 +178,36 @@ export const AutoPartnerLogo: React.FC<AutoPartnerLogoProps> = ({
   if (variant === 'marquee') {
     if (aspect >= 2.4) {
       // Wide wordmark (e.g. Metamorph Academy ~3.2, HIMA ~3.5, Bim University ~3.0)
-      // Mobile: 36px height (h-9) -> ~115px width (comfortably within max-w-[145px])
-      // Tablet/Desktop: 48px - 56px height -> ~160px - 180px width
-      sizeClasses = 'h-9 sm:h-12 md:h-14 w-auto max-w-[145px] sm:max-w-[210px] md:max-w-[260px]';
+      sizeClasses = 'h-11 sm:h-14 md:h-16 w-auto max-w-[170px] sm:max-w-[240px] md:max-w-[300px]';
     } else if (aspect >= 1.4) {
       // Standard rectangular logo (e.g. Lippo Mall, Level 21, Chemi, Sangguru)
-      // Mobile: 40px height (h-10) -> ~75px width
-      // Desktop: 52px - 60px height
-      sizeClasses = 'h-10 sm:h-13 md:h-15 w-auto max-w-[120px] sm:max-w-[175px] md:max-w-[210px]';
+      sizeClasses = 'h-12 sm:h-15 md:h-18 w-auto max-w-[140px] sm:max-w-[200px] md:max-w-[245px]';
     } else if (aspect >= 0.85) {
       // Square / round emblem / crest (e.g. Disdikpora ~1.0, GSA ~1.0, BDI ~1.0, BKRAF)
-      // Mobile: 48px height (h-12) & 48px width -> perfectly balances optical mass with wide wordmarks!
-      // Desktop: 60px - 72px height
-      sizeClasses = 'h-12 sm:h-15 md:h-18 w-auto max-w-[52px] sm:max-w-[72px] md:max-w-[88px]';
+      sizeClasses = 'h-14 sm:h-18 md:h-22 w-auto max-w-[65px] sm:max-w-[88px] md:max-w-[108px]';
     } else {
       // Tall vertical logo (e.g. Tenang Jiwa / BJ ~0.7)
-      sizeClasses = 'h-13 sm:h-17 md:h-20 w-auto max-w-[44px] sm:max-w-[60px] md:max-w-[75px]';
+      sizeClasses = 'h-15 sm:h-20 md:h-24 w-auto max-w-[55px] sm:max-w-[75px] md:max-w-[95px]';
     }
   } else {
-    // Grid variant (PartnershipView) - perfectly contained within mobile 2-col cells
+    // Grid variant (PartnershipView) - perfectly balanced to eliminate crowded/mepet logos and equalize visual weights
     if (aspect >= 2.4) {
-      sizeClasses = 'h-8 sm:h-11 md:h-13 w-auto max-w-[88%]';
+      // Wide wordmarks (Metamorph Academy, Bim University, HIMA)
+      sizeClasses = 'h-7 sm:h-9 md:h-11 w-auto max-w-[130px] sm:max-w-[155px] md:max-w-[170px]';
     } else if (aspect >= 1.4) {
-      sizeClasses = 'h-9 sm:h-12 md:h-14 w-auto max-w-[82%]';
+      // Standard rectangular logos (Lippo Mall, Level 21, Chemi, Kucetakin)
+      sizeClasses = 'h-8 sm:h-10 md:h-12 w-auto max-w-[120px] sm:max-w-[145px] md:max-w-[160px]';
     } else if (aspect >= 0.85) {
-      sizeClasses = 'h-11 sm:h-14 md:h-17 w-auto max-w-[70%]';
+      // Square / round emblems / crests (AE Group, Noxaz Media, Planet Gadget, BDI, Disdikpora)
+      sizeClasses = 'h-13 sm:h-16 md:h-19 w-auto max-w-[65px] sm:max-w-[82px] md:max-w-[95px]';
     } else {
-      sizeClasses = 'h-12 sm:h-16 md:h-19 w-auto max-w-[60%]';
+      // Tall vertical logos (BJ)
+      sizeClasses = 'h-14 sm:h-17 md:h-20 w-auto max-w-[50px] sm:max-w-[65px] md:max-w-[75px]';
     }
   }
 
-  // Handle optional fine-tuning scale if provided in partnerLogos.tsx (clamped to prevent mobile blowup)
-  const safeScale = partner.scale ? Math.min(1.3, Math.max(0.7, partner.scale)) : 1;
+  // Handle optional fine-tuning scale if provided in partnerLogos.tsx
+  const safeScale = partner.scale ? Math.min(1.5, Math.max(0.6, partner.scale)) : 1;
 
   return (
     <div

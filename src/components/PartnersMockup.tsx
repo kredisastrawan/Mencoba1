@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { PARTNER_LOGOS } from '../data/partnerLogos';
+import { HOME_MARQUEE_LOGOS, getPartnerLogosByRow } from '../data/partnerLogos';
 import { AutoPartnerLogo } from './AutoPartnerLogo';
 
 interface PartnersMockupProps {
@@ -8,31 +8,56 @@ interface PartnersMockupProps {
 }
 
 export const PartnersMockup: React.FC<PartnersMockupProps> = ({ onViewAll }) => {
-  // Daftar digandakan supaya putarannya mulus tanpa jeda
-  const loop = [...PARTNER_LOGOS, ...PARTNER_LOGOS];
+  // Pisahkan logo atas dan logo bawah khusus untuk Marquee Home Depan
+  const { topLogos, bottomLogos } = getPartnerLogosByRow(HOME_MARQUEE_LOGOS);
+
+  // Duplikasi list untuk continuous 100% endless loop scrolling ke kiri tanpa jump/glitch
+  const row1 = [...topLogos, ...topLogos];
+  const row2 = [...bottomLogos, ...bottomLogos];
 
   return (
-    <section id="partnership" className="py-14 sm:py-20 bg-slate-50 border-t border-slate-200/80">
+    <section id="partnership" className="py-14 sm:py-20 bg-slate-50 border-t border-slate-200/80 overflow-hidden">
+      {/* Keyframes continuous smooth infinite marquee scroll ke kiri & pause on hover */}
       <style>{`
-        @keyframes bye-marquee-ltr {
-          from { transform: translateX(-50%); }
-          to   { transform: translateX(0); }
+        @keyframes bye-marquee-infinite-left {
+          0% {
+            transform: translateX(0%);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
         }
-        .bye-marquee-track {
+
+        .marquee-track-top {
           display: flex;
           width: max-content;
-          animation: bye-marquee-ltr 60s linear infinite;
+          will-change: transform;
+          animation: bye-marquee-infinite-left 38s linear infinite;
         }
-        .bye-marquee:hover .bye-marquee-track {
+
+        .marquee-track-bottom {
+          display: flex;
+          width: max-content;
+          will-change: transform;
+          animation: bye-marquee-infinite-left 44s linear infinite;
+        }
+
+        .bye-marquee-container:hover .marquee-track-top,
+        .bye-marquee-container:hover .marquee-track-bottom {
           animation-play-state: paused;
         }
+
         @media (prefers-reduced-motion: reduce) {
-          .bye-marquee-track { animation: none; }
+          .marquee-track-top,
+          .marquee-track-bottom {
+            animation: none;
+          }
         }
       `}</style>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between mb-8 sm:mb-10">
+      {/* Header section: Tetap gunakan teks 'Telah Berkolaborasi Dengan' & tombol 'View All' */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 sm:mb-12">
+        <div className="flex items-center justify-between">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0284c7] tracking-tight">
             Telah Berkolaborasi Dengan
           </h2>
@@ -48,23 +73,40 @@ export const PartnersMockup: React.FC<PartnersMockupProps> = ({ onViewAll }) => 
         </div>
       </div>
 
-      {/* Logo berjalan kiri ke kanan tanpa shape kotak & tanpa shadow */}
+      {/* 2-Row Stacked Infinite Marquee TANPA shape kotak di setiap logo & dengan linear gradient fade mask */}
       <div
-        className="bye-marquee overflow-hidden py-6 sm:py-8"
+        className="bye-marquee-container space-y-6 sm:space-y-8 py-2"
         style={{
-          maskImage: 'linear-gradient(to right, transparent, black 5%, black 95%, transparent)',
-          WebkitMaskImage: 'linear-gradient(to right, transparent, black 5%, black 95%, transparent)',
+          maskImage: 'linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%)',
+          WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%)',
         }}
       >
-        <div className="bye-marquee-track items-center py-3 sm:py-6">
-          {loop.map((p, idx) => (
-            <div
-              key={idx}
-              className="shrink-0 mx-5 sm:mx-10 md:mx-14 flex items-center justify-center select-none group h-16 sm:h-22 md:h-28"
-            >
-              <AutoPartnerLogo partner={p} variant="marquee" />
-            </div>
-          ))}
+        {/* Baris 1 (Display Atas): scrolling infinitely ke kiri */}
+        <div className="overflow-hidden py-1">
+          <div className="marquee-track-top items-center">
+            {row1.map((p, idx) => (
+              <div
+                key={`top-${idx}`}
+                className="shrink-0 mx-6 sm:mx-10 md:mx-14 flex items-center justify-center select-none group h-16 sm:h-22 md:h-28"
+              >
+                <AutoPartnerLogo partner={p} variant="marquee" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Baris 2 (Display Bawah): scrolling infinitely ke kiri */}
+        <div className="overflow-hidden py-1">
+          <div className="marquee-track-bottom items-center">
+            {row2.map((p, idx) => (
+              <div
+                key={`bottom-${idx}`}
+                className="shrink-0 mx-6 sm:mx-10 md:mx-14 flex items-center justify-center select-none group h-16 sm:h-22 md:h-28"
+              >
+                <AutoPartnerLogo partner={p} variant="marquee" />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
